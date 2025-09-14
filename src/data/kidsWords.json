@@ -1,0 +1,4980 @@
+[
+  {
+    "id": 1,
+    "word": "in England",
+    "translation": "in England",
+    "translationRu": "в Англии",
+    "transcription": "[ɪn ˈɪŋɡlənd]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 2,
+    "word": "my friend",
+    "translation": "mein Freund / meine Freundin",
+    "translationRu": "мой друг / моя подруга",
+    "transcription": "[ˈfrend]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 3,
+    "word": "too",
+    "translation": "auch",
+    "translationRu": "тоже",
+    "transcription": "[tuː]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 4,
+    "word": "by the sea",
+    "translation": "am Meer",
+    "translationRu": "у моря",
+    "transcription": "[baɪ ðə siː]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 5,
+    "word": "the",
+    "translation": "der, die, das",
+    "translationRu": "артикль (the)",
+    "transcription": "[ðə]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 6,
+    "word": "sea",
+    "translation": "das Meer",
+    "translationRu": "море",
+    "transcription": "[siː]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 7,
+    "word": "boy",
+    "translation": "der Junge",
+    "translationRu": "мальчик",
+    "transcription": "[bɔɪ]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 8,
+    "word": "girl",
+    "translation": "das Mädchen",
+    "translationRu": "девочка",
+    "transcription": "[ɡɜːrl]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 9,
+    "word": "beach",
+    "translation": "der Strand",
+    "translationRu": "пляж",
+    "transcription": "[biːtʃ]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 10,
+    "word": "sand",
+    "translation": "der Sand",
+    "translationRu": "песок",
+    "transcription": "[sænd]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 11,
+    "word": "seagull",
+    "translation": "die Möwe",
+    "translationRu": "чайка",
+    "transcription": "[ˈsiːɡʌl]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 12,
+    "word": "sky",
+    "translation": "der Himmel",
+    "translationRu": "небо",
+    "transcription": "[skaɪ]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 13,
+    "word": "stone",
+    "translation": "der Stein",
+    "translationRu": "камень",
+    "transcription": "[stoʊn]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 14,
+    "word": "see",
+    "translation": "sehen; besuchen",
+    "translationRu": "видеть",
+    "transcription": "[siː]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 15,
+    "word": "like",
+    "translation": "mögen",
+    "translationRu": "нравиться",
+    "transcription": "[laɪk]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 16,
+    "word": "picture",
+    "translation": "das Bild",
+    "translationRu": "картина, изображение",
+    "transcription": "[ˈpɪktʃər]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 17,
+    "word": "think",
+    "translation": "denken, glauben; meinen",
+    "translationRu": "думать",
+    "transcription": "[θɪŋk]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 18,
+    "word": "nice",
+    "translation": "nett, schön",
+    "translationRu": "приятный, хороший",
+    "transcription": "[naɪs]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 19,
+    "word": "cool",
+    "translation": "cool",
+    "translationRu": "крутой, классный",
+    "transcription": "[kuːl]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 20,
+    "word": "big",
+    "translation": "groß",
+    "translationRu": "большой",
+    "transcription": "[bɪɡ]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 21,
+    "word": "small",
+    "translation": "klein",
+    "translationRu": "маленький",
+    "transcription": "[smɔːl]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 22,
+    "word": "great",
+    "translation": "großartig",
+    "translationRu": "замечательный",
+    "transcription": "[ɡreɪt]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 23,
+    "word": "hot",
+    "translation": "heiß",
+    "translationRu": "горячий",
+    "transcription": "[hɒt]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 24,
+    "word": "cold",
+    "translation": "kalt",
+    "translationRu": "холодный",
+    "transcription": "[koʊld]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 25,
+    "word": "hometown",
+    "translation": "die Heimatstadt",
+    "translationRu": "родной город",
+    "transcription": "[ˈhaʊmtaʊn]",
+    "learned": false,
+    "page": 9
+  },
+  {
+    "id": 26,
+    "word": "town",
+    "translation": "die Stadt",
+    "translationRu": "город",
+    "transcription": "[taʊn]",
+    "learned": false,
+    "page": 9
+  },
+  {
+    "id": 27,
+    "word": "hello",
+    "translation": "Hallo / Guten Tag",
+    "translationRu": "здравствуйте / привет",
+    "transcription": "[həˈləʊ]",
+    "learned": false,
+    "page": 9
+  },
+  {
+    "id": 28,
+    "word": "today",
+    "translation": "heute",
+    "translationRu": "сегодня",
+    "transcription": "[təˈdeɪ]",
+    "learned": false,
+    "page": 9
+  },
+  {
+    "id": 29,
+    "word": "How are you?",
+    "translation": "Wie geht’s? / Wie geht es dir/euch/Ihnen?",
+    "translationRu": "Как дела?",
+    "transcription": "[haʊ ɑː juː]",
+    "learned": false,
+    "page": 9
+  },
+  {
+    "id": 30,
+    "word": "I’m fine, thanks.",
+    "translation": "Gut, danke.",
+    "translationRu": "Хорошо, спасибо.",
+    "transcription": "[faɪn]",
+    "learned": false,
+    "page": 9
+  },
+  {
+    "id": 31,
+    "word": "live",
+    "translation": "wohnen; leben",
+    "translationRu": "жить",
+    "transcription": "[lɪv]",
+    "learned": false,
+    "page": 9
+  },
+  {
+    "id": 32,
+    "word": "can",
+    "translation": "können",
+    "translationRu": "мочь",
+    "transcription": "[kæn]",
+    "learned": false,
+    "page": 9
+  },
+  {
+    "id": 33,
+    "word": "fly",
+    "translation": "fliegen",
+    "translationRu": "летать",
+    "transcription": "[flaɪ]",
+    "learned": false,
+    "page": 9
+  },
+  {
+    "id": 34,
+    "word": "a tour of Brighton",
+    "translation": "ein Rundgang/eine Rundfahrt/eine Reise durch Brighton",
+    "translationRu": "экскурсия по Брайтону",
+    "transcription": "[tʊər əv]",
+    "learned": false,
+    "page": 9
+  },
+  {
+    "id": 35,
+    "word": "Germany",
+    "translation": "Deutschland",
+    "translationRu": "Германия",
+    "transcription": "[ˈdʒɜːməni]",
+    "learned": false,
+    "page": 9
+  },
+  {
+    "id": 36,
+    "word": "bye",
+    "translation": "Tschüs / Auf Wiedersehen",
+    "translationRu": "пока / до свидания",
+    "transcription": "[baɪ]",
+    "learned": false,
+    "page": 9
+  },
+  {
+    "id": 37,
+    "word": "garden",
+    "translation": "der Garten",
+    "translationRu": "сад",
+    "transcription": "[ˈɡɑːdn]",
+    "learned": false,
+    "page": 10
+  },
+  {
+    "id": 38,
+    "word": "palace",
+    "translation": "der Palast, das Schloss",
+    "translationRu": "дворец, замок",
+    "transcription": "[ˈpæləs]",
+    "learned": false,
+    "page": 10
+  },
+  {
+    "id": 39,
+    "word": "the gardens are great",
+    "translation": "die Gärten sind großartig",
+    "translationRu": "сады великолепны",
+    "transcription": "[ðə ˈɡɑːdnz ɑː ɡreɪt]",
+    "learned": false,
+    "page": 10
+  },
+  {
+    "id": 40,
+    "word": "park",
+    "translation": "der Park",
+    "translationRu": "парк",
+    "transcription": "[pɑːk]",
+    "learned": false,
+    "page": 10
+  },
+  {
+    "id": 41,
+    "word": "game",
+    "translation": "das Spiel",
+    "translationRu": "игра",
+    "transcription": "[ɡeɪm]",
+    "learned": false,
+    "page": 10
+  },
+  {
+    "id": 42,
+    "word": "bag",
+    "translation": "die Tasche, der Beutel, die Tüte",
+    "translationRu": "сумка",
+    "transcription": "[bæɡ]",
+    "learned": false,
+    "page": 10
+  },
+  {
+    "id": 43,
+    "word": "find",
+    "translation": "finden",
+    "translationRu": "находить",
+    "transcription": "[faɪnd]",
+    "learned": false,
+    "page": 11
+  },
+  {
+    "id": 44,
+    "word": "banana",
+    "translation": "die Banane",
+    "translationRu": "банан",
+    "transcription": "[bəˈnɑːnə]",
+    "learned": false,
+    "page": 11
+  },
+  {
+    "id": 45,
+    "word": "have",
+    "translation": "haben",
+    "translationRu": "иметь",
+    "transcription": "[hæv]",
+    "learned": false,
+    "page": 11
+  },
+  {
+    "id": 46,
+    "word": "wrong",
+    "translation": "falsch, verkehrt",
+    "translationRu": "неправильный",
+    "transcription": "[rɒŋ]",
+    "learned": false,
+    "page": 11
+  },
+  {
+    "id": 47,
+    "word": "school",
+    "translation": "die Schule",
+    "translationRu": "школа",
+    "transcription": "[skuːl]",
+    "learned": false,
+    "page": 12
+  },
+  {
+    "id": 48,
+    "word": "new",
+    "translation": "neu",
+    "translationRu": "новый",
+    "transcription": "[njuː]",
+    "learned": false,
+    "page": 12
+  },
+  {
+    "id": 49,
+    "word": "at",
+    "translation": "(in Ortsangaben) an, bei, in",
+    "translationRu": "в, у, при",
+    "transcription": "[æt]",
+    "learned": false,
+    "page": 12
+  },
+  {
+    "id": 50,
+    "word": "year",
+    "translation": "der Jahrgang (die Jahrgangsstufe)",
+    "translationRu": "год, учебный год",
+    "transcription": "[jɪə]",
+    "learned": false,
+    "page": 12
+  },
+  {
+    "id": 51,
+    "word": "please",
+    "translation": "bitte",
+    "translationRu": "пожалуйста",
+    "transcription": "[pliːz]",
+    "learned": false,
+    "page": 12
+  },
+  {
+    "id": 52,
+    "word": "uniform",
+    "translation": "die (Schul-)Uniform",
+    "translationRu": "школьная форма",
+    "transcription": "[ˈjuːnɪfɔːm]",
+    "learned": false,
+    "page": 12
+  },
+  {
+    "id": 53,
+    "word": "thing",
+    "translation": "die Sache, das Ding",
+    "translationRu": "вещь",
+    "transcription": "[θɪŋ]",
+    "learned": false,
+    "page": 13
+  },
+  {
+    "id": 54,
+    "word": "know",
+    "translation": "wissen",
+    "translationRu": "знать",
+    "transcription": "[nəʊ]",
+    "learned": false,
+    "page": 13
+  },
+  {
+    "id": 55,
+    "word": "thanks",
+    "translation": "Danke",
+    "translationRu": "спасибо",
+    "transcription": "[θæŋks]",
+    "learned": false,
+    "page": 13
+  },
+  {
+    "id": 56,
+    "word": "thank you",
+    "translation": "Danke",
+    "translationRu": "спасибо",
+    "transcription": "[ˈθæŋk juː]",
+    "learned": false,
+    "page": 13
+  },
+  {
+    "id": 57,
+    "word": "with",
+    "translation": "mit, bei",
+    "translationRu": "с, вместе с",
+    "transcription": "[wɪð]",
+    "learned": false,
+    "page": 13
+  },
+  {
+    "id": 58,
+    "word": "dot",
+    "translation": "der Punkt, das Pünktchen",
+    "translationRu": "точка",
+    "transcription": "[dɒt]",
+    "learned": false,
+    "page": 13
+  },
+  {
+    "id": 59,
+    "word": "double",
+    "translation": "Doppel-",
+    "translationRu": "двойной",
+    "transcription": "[ˈdʌbl]",
+    "learned": false,
+    "page": 13
+  },
+  {
+    "id": 60,
+    "word": "sit",
+    "translation": "sitzen; sich setzen",
+    "translationRu": "сидеть; садиться",
+    "transcription": "[sɪt]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 61,
+    "word": "together",
+    "translation": "zusammen",
+    "translationRu": "вместе",
+    "transcription": "[təˈɡɛðə]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 62,
+    "word": "Mr Lee",
+    "translation": "Herr Lee",
+    "translationRu": "Мистер Ли",
+    "transcription": "[ˈmɪstə liː]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 63,
+    "word": "Mrs Lee",
+    "translation": "Frau Lee",
+    "translationRu": "Миссис Ли",
+    "transcription": "[ˈmɪsɪz liː]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 64,
+    "word": "teach",
+    "translation": "unterrichten",
+    "translationRu": "преподавать, учить",
+    "transcription": "[tiːtʃ]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 65,
+    "word": "art",
+    "translation": "die Kunst",
+    "translationRu": "искусство",
+    "transcription": "[ɑːt]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 66,
+    "word": "history",
+    "translation": "die Geschichte",
+    "translationRu": "история",
+    "transcription": "[ˈhɪstri]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 67,
+    "word": "class teacher",
+    "translation": "Klassenlehrer/in",
+    "translationRu": "классный руководитель",
+    "transcription": "[klɑːs ˈtiːtʃər]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 68,
+    "word": "poem",
+    "translation": "das Gedicht",
+    "translationRu": "стихотворение",
+    "transcription": "[ˈpəʊɪm]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 69,
+    "word": "day",
+    "translation": "der Tag",
+    "translationRu": "день",
+    "transcription": "[deɪ]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 70,
+    "word": "Monday",
+    "translation": "Montag",
+    "translationRu": "понедельник",
+    "transcription": "[ˈmʌndeɪ]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 71,
+    "word": "Tuesday",
+    "translation": "Dienstag",
+    "translationRu": "вторник",
+    "transcription": "[ˈtjuːzdeɪ]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 72,
+    "word": "Wednesday",
+    "translation": "Mittwoch",
+    "translationRu": "среда",
+    "transcription": "[ˈwɛnzdeɪ]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 73,
+    "word": "Thursday",
+    "translation": "Donnerstag",
+    "translationRu": "четверг",
+    "transcription": "[ˈθɜːrzdeɪ]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 74,
+    "word": "Friday",
+    "translation": "Freitag",
+    "translationRu": "пятница",
+    "transcription": "[ˈfraɪdeɪ]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 75,
+    "word": "Saturday",
+    "translation": "Samstag, Sonnabend",
+    "translationRu": "суббота",
+    "transcription": "[ˈsætərdeɪ]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 76,
+    "word": "Sunday",
+    "translation": "Sonntag",
+    "translationRu": "воскресенье",
+    "transcription": "[ˈsʌndeɪ]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 77,
+    "word": "book",
+    "translation": "das Buch; das Heft",
+    "translationRu": "книга, тетрадь",
+    "transcription": "[bʊk]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 78,
+    "word": "song",
+    "translation": "das Lied, der Song",
+    "translationRu": "песня",
+    "transcription": "[sɒŋ]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 79,
+    "word": "go",
+    "translation": "gehen",
+    "translationRu": "идти",
+    "transcription": "[ɡəʊ]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 80,
+    "word": "speak",
+    "translation": "sprechen",
+    "translationRu": "говорить",
+    "transcription": "[spiːk]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 81,
+    "word": "French",
+    "translation": "Französisch",
+    "translationRu": "французский язык",
+    "transcription": "[frentʃ]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 82,
+    "word": "read",
+    "translation": "lesen",
+    "translationRu": "читать",
+    "transcription": "[riːd]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 83,
+    "word": "watch a film",
+    "translation": "sich einen Film anschauen",
+    "translationRu": "смотреть фильм",
+    "transcription": "[wɒtʃ ə fɪlm]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 84,
+    "word": "but",
+    "translation": "aber",
+    "translationRu": "но",
+    "transcription": "[bʌt]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 85,
+    "word": "I don’t have",
+    "translation": "Ich habe kein/keine/keinen …",
+    "translationRu": "у меня нет",
+    "transcription": "[aɪ doʊnt hæv]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 86,
+    "word": "so cool / hot",
+    "translation": "so cool / heiß",
+    "translationRu": "такой классный / жаркий",
+    "transcription": "[soʊ kuːl / hɒt]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 87,
+    "word": "board",
+    "translation": "die Wand; Tafel",
+    "translationRu": "доска",
+    "transcription": "[bɔːrd]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 88,
+    "word": "chair",
+    "translation": "der Stuhl",
+    "translationRu": "стул",
+    "transcription": "[tʃeə]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 89,
+    "word": "desk",
+    "translation": "der Schreibtisch",
+    "translationRu": "письменный стол",
+    "transcription": "[desk]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 90,
+    "word": "exercise book",
+    "translation": "das Schulheft; das Übungsheft",
+    "translationRu": "тетрадь",
+    "transcription": "[ˈeksərsaɪz bʊk]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 91,
+    "word": "pencil case",
+    "translation": "das Federmäppchen",
+    "translationRu": "пенал",
+    "transcription": "[ˈpensl keɪs]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 92,
+    "word": "pencil",
+    "translation": "der Bleistift",
+    "translationRu": "карандаш",
+    "transcription": "[ˈpensl]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 93,
+    "word": "schoolbag",
+    "translation": "die Schultasche",
+    "translationRu": "школьная сумка",
+    "transcription": "[ˈskuːlbæɡ]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 94,
+    "word": "student",
+    "translation": "Schüler/in; Student/in",
+    "translationRu": "ученик; студент",
+    "transcription": "[ˈstjuːdnt]",
+    "learned": false,
+    "page": 14
+  },
+  {
+    "id": 95,
+    "word": "marker",
+    "translation": "der Textmarker",
+    "translationRu": "маркер (текстовый)",
+    "transcription": "[ˈmɑːkə]",
+    "learned": false,
+    "page": 15
+  },
+  {
+    "id": 96,
+    "word": "pen",
+    "translation": "der Kugelschreiber, der Stift, der Füller",
+    "translationRu": "ручка, перьевая ручка",
+    "transcription": "[pen]",
+    "learned": false,
+    "page": 15
+  },
+  {
+    "id": 97,
+    "word": "rubber",
+    "translation": "der/das Radiergummi",
+    "translationRu": "ластик",
+    "transcription": "[ˈrʌbə]",
+    "learned": false,
+    "page": 15
+  },
+  {
+    "id": 98,
+    "word": "ruler",
+    "translation": "das Lineal",
+    "translationRu": "линейка",
+    "transcription": "[ˈruːlə]",
+    "learned": false,
+    "page": 15
+  },
+  {
+    "id": 99,
+    "word": "sharpener",
+    "translation": "der Anspitzer",
+    "translationRu": "точилка",
+    "transcription": "[ˈʃɑːpnə]",
+    "learned": false,
+    "page": 15
+  },
+  {
+    "id": 100,
+    "word": "no ...",
+    "translation": "kein ..., keine ...",
+    "translationRu": "нет, никакой ...",
+    "transcription": "[nəʊ]",
+    "learned": false,
+    "page": 15
+  },
+  {
+    "id": 101,
+    "word": "problem",
+    "translation": "das Problem",
+    "translationRu": "проблема",
+    "transcription": "[ˈprɒbləm]",
+    "learned": false,
+    "page": 15
+  },
+  {
+    "id": 102,
+    "word": "Here you are.",
+    "translation": "Hier, bitte.",
+    "translationRu": "Вот, пожалуйста.",
+    "transcription": "[hɪə]",
+    "learned": false,
+    "page": 15
+  },
+  {
+    "id": 103,
+    "word": "Simon says ...",
+    "translation": "Simon sagt ...",
+    "translationRu": "Саймон говорит ...",
+    "transcription": "[sez]",
+    "learned": false,
+    "page": 15
+  },
+  {
+    "id": 104,
+    "word": "world",
+    "translation": "die Welt",
+    "translationRu": "мир",
+    "transcription": "[wɜːld]",
+    "learned": false,
+    "page": 16
+  },
+  {
+    "id": 105,
+    "word": "pet",
+    "translation": "das Haustier",
+    "translationRu": "домашнее животное",
+    "transcription": "[pet]",
+    "learned": false,
+    "page": 16
+  },
+  {
+    "id": 106,
+    "word": "cute",
+    "translation": "niedlich, süß",
+    "translationRu": "милый",
+    "transcription": "[kjuːt]",
+    "learned": false,
+    "page": 16
+  },
+  {
+    "id": 107,
+    "word": "scary",
+    "translation": "unheimlich, gruselig",
+    "translationRu": "страшный",
+    "transcription": "[ˈskeəri]",
+    "learned": false,
+    "page": 16
+  },
+  {
+    "id": 108,
+    "word": "boring",
+    "translation": "langweilig",
+    "translationRu": "скучный",
+    "transcription": "[ˈbɔːrɪŋ]",
+    "learned": false,
+    "page": 16
+  },
+  {
+    "id": 109,
+    "word": "budgie",
+    "translation": "der Wellensittich",
+    "translationRu": "волнистый попугай",
+    "transcription": "[ˈbʌdʒi]",
+    "learned": false,
+    "page": 16
+  },
+  {
+    "id": 110,
+    "word": "cat",
+    "translation": "die Katze",
+    "translationRu": "кошка",
+    "transcription": "[kæt]",
+    "learned": false,
+    "page": 16
+  },
+  {
+    "id": 111,
+    "word": "fish",
+    "translation": "der Fisch",
+    "translationRu": "рыба",
+    "transcription": "[fɪʃ]",
+    "learned": false,
+    "page": 16
+  },
+  {
+    "id": 112,
+    "word": "guinea pig",
+    "translation": "das Meerschweinchen",
+    "translationRu": "морская свинка",
+    "transcription": "[ˈɡɪni pɪɡ]",
+    "learned": false,
+    "page": 16
+  },
+  {
+    "id": 113,
+    "word": "parrot",
+    "translation": "der Papagei",
+    "translationRu": "попугай",
+    "transcription": "[ˈpærət]",
+    "learned": false,
+    "page": 16
+  },
+  {
+    "id": 114,
+    "word": "rabbit",
+    "translation": "das Kaninchen",
+    "translationRu": "кролик",
+    "transcription": "[ˈræbɪt]",
+    "learned": false,
+    "page": 16
+  },
+  {
+    "id": 115,
+    "word": "rat",
+    "translation": "die Ratte",
+    "translationRu": "крыса",
+    "transcription": "[ræt]",
+    "learned": false,
+    "page": 16
+  },
+  {
+    "id": 116,
+    "word": "snake",
+    "translation": "die Schlange",
+    "translationRu": "змея",
+    "transcription": "[sneɪk]",
+    "learned": false,
+    "page": 16
+  },
+  {
+    "id": 117,
+    "word": "spider",
+    "translation": "die Spinne",
+    "translationRu": "паук",
+    "transcription": "[ˈspaɪdə]",
+    "learned": false,
+    "page": 16
+  },
+  {
+    "id": 118,
+    "word": "under",
+    "translation": "unter",
+    "translationRu": "под",
+    "transcription": "[ˈʌndə]",
+    "learned": false,
+    "page": 16
+  },
+  {
+    "id": 119,
+    "word": "I don’t like …",
+    "translation": "Ich mag … nicht. / Ich mag kein/keine/keinen …",
+    "translationRu": "я не люблю …",
+    "transcription": "[aɪ doʊnt laɪk]",
+    "learned": false,
+    "page": 16
+  },
+  {
+    "id": 120,
+    "word": "more",
+    "translation": "mehr",
+    "translationRu": "больше",
+    "transcription": "[mɔː]",
+    "learned": false,
+    "page": 16
+  },
+  {
+    "id": 121,
+    "word": "animal",
+    "translation": "das Tier",
+    "translationRu": "животное",
+    "transcription": "[ˈænɪml]",
+    "learned": false,
+    "page": 16
+  },
+  {
+    "id": 122,
+    "word": "hobby",
+    "translation": "das Hobby",
+    "translationRu": "хобби",
+    "transcription": "[ˈhɒbi]",
+    "learned": false,
+    "page": 17
+  },
+  {
+    "id": 123,
+    "word": "football",
+    "translation": "der Fußball",
+    "translationRu": "футбол",
+    "transcription": "[ˈfʊtbɔːl]",
+    "learned": false,
+    "page": 17
+  },
+  {
+    "id": 124,
+    "word": "run",
+    "translation": "rennen, laufen",
+    "translationRu": "бегать, бежать",
+    "transcription": "[rʌn]",
+    "learned": false,
+    "page": 17
+  },
+  {
+    "id": 125,
+    "word": "music",
+    "translation": "die Musik",
+    "translationRu": "музыка",
+    "transcription": "[ˈmjuːzɪk]",
+    "learned": false,
+    "page": 17
+  },
+  {
+    "id": 126,
+    "word": "swim",
+    "translation": "schwimmen",
+    "translationRu": "плавать",
+    "transcription": "[swɪm]",
+    "learned": false,
+    "page": 17
+  },
+  {
+    "id": 127,
+    "word": "dance",
+    "translation": "tanzen",
+    "translationRu": "танцевать",
+    "transcription": "[dɑːns]",
+    "learned": false,
+    "page": 17
+  },
+  {
+    "id": 128,
+    "word": "what",
+    "translation": "was",
+    "translationRu": "что",
+    "transcription": "[wɒt]",
+    "learned": false,
+    "page": 17
+  },
+  {
+    "id": 129,
+    "word": "What about you?",
+    "translation": "Und du? / Und was ist mit dir? (Und ihr?)",
+    "translationRu": "А ты? / А как насчёт тебя? (вас?)",
+    "transcription": "[wɒt əˈbaʊt juː]",
+    "learned": false,
+    "page": 17
+  },
+  {
+    "id": 130,
+    "word": "if",
+    "translation": "wenn, falls",
+    "translationRu": "если",
+    "transcription": "[ɪf]",
+    "learned": false,
+    "page": 17
+  },
+  {
+    "id": 131,
+    "word": "need",
+    "translation": "brauchen, benötigen",
+    "translationRu": "нуждаться; нужно",
+    "transcription": "[niːd]",
+    "learned": false,
+    "page": 17
+  },
+  {
+    "id": 132,
+    "word": "at home",
+    "translation": "daheim, zu Hause",
+    "translationRu": "дома",
+    "transcription": "[æt ˈhəʊm]",
+    "learned": false,
+    "page": 22
+  },
+  {
+    "id": 133,
+    "word": "everyone",
+    "translation": "jeder; alle",
+    "translationRu": "каждый; все",
+    "transcription": "[ˈevriwʌn]",
+    "learned": false,
+    "page": 22
+  },
+  {
+    "id": 134,
+    "word": "This is ...",
+    "translation": "Dies ist … / Das ist …",
+    "translationRu": "Это …",
+    "transcription": "[ðɪs ɪz]",
+    "learned": false,
+    "page": 22
+  },
+  {
+    "id": 135,
+    "word": "street",
+    "translation": "die Straße",
+    "translationRu": "улица",
+    "transcription": "[striːt]",
+    "learned": false,
+    "page": 22
+  },
+  {
+    "id": 136,
+    "word": "It’s called ...",
+    "translation": "Er/Sie/Es heißt …",
+    "translationRu": "называется ...",
+    "transcription": "[ɪts]",
+    "learned": false,
+    "page": 22
+  },
+  {
+    "id": 137,
+    "word": "road",
+    "translation": "die Straße (Landstraße zwischen Orten; Straße in Orten)",
+    "translationRu": "дорога; шоссе",
+    "transcription": "[rəʊd]",
+    "learned": false,
+    "page": 22
+  },
+  {
+    "id": 138,
+    "word": "car",
+    "translation": "das Auto",
+    "translationRu": "машина, автомобиль",
+    "transcription": "[kɑː]",
+    "learned": false,
+    "page": 22
+  },
+  {
+    "id": 139,
+    "word": "house",
+    "translation": "das Haus",
+    "translationRu": "дом",
+    "transcription": "[haʊs]",
+    "learned": false,
+    "page": 22
+  },
+  {
+    "id": 140,
+    "word": "a lot of",
+    "translation": "viel …, viele …",
+    "translationRu": "много",
+    "transcription": "[ə ˈlɒt əv]",
+    "learned": false,
+    "page": 22
+  },
+  {
+    "id": 141,
+    "word": "lots of",
+    "translation": "viel …, viele …",
+    "translationRu": "много",
+    "transcription": "[ˈlɒts əv]",
+    "learned": false,
+    "page": 22
+  },
+  {
+    "id": 142,
+    "word": "postman",
+    "translation": "der Briefträger, der Postbote",
+    "translationRu": "почтальон",
+    "transcription": "[ˈpəʊstmən]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 143,
+    "word": "morning",
+    "translation": "der Morgen, der Vormittag",
+    "translationRu": "утро",
+    "transcription": "[ˈmɔːnɪŋ]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 144,
+    "word": "doorbell",
+    "translation": "die Türklingel, die Türglocke",
+    "translationRu": "дверной звонок",
+    "transcription": "[ˈdɔːbel]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 145,
+    "word": "bell",
+    "translation": "die Klingel, die Glocke",
+    "translationRu": "колокол, звонок",
+    "transcription": "[bel]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 146,
+    "word": "maybe",
+    "translation": "vielleicht",
+    "translationRu": "может быть",
+    "transcription": "[ˈmeɪbi]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 147,
+    "word": "dad",
+    "translation": "der Papa, der Vati",
+    "translationRu": "папа",
+    "transcription": "[dæd]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 148,
+    "word": "mum",
+    "translation": "die Mama, die Mutti",
+    "translationRu": "мама",
+    "transcription": "[mʌm]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 149,
+    "word": "come",
+    "translation": "kommen",
+    "translationRu": "приходить",
+    "transcription": "[kʌm]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 150,
+    "word": "so",
+    "translation": "also; deshalb, daher",
+    "translationRu": "так; поэтому",
+    "transcription": "[səʊ]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 151,
+    "word": "you're",
+    "translation": "du bist",
+    "translationRu": "ты есть",
+    "transcription": "[jʊə]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 152,
+    "word": "her class",
+    "translation": "ihre Klasse",
+    "translationRu": "её класс",
+    "transcription": "[hɜː klɑːs]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 153,
+    "word": "upstairs",
+    "translation": "oben; nach oben (im Haus)",
+    "translationRu": "наверху; вверх по лестнице",
+    "transcription": "[ˌʌpˈsteəz]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 154,
+    "word": "downstairs",
+    "translation": "unten; nach unten (im Haus)",
+    "translationRu": "внизу; вниз по лестнице",
+    "transcription": "[ˌdaʊnˈsteəz]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 155,
+    "word": "room",
+    "translation": "das Zimmer, der Raum",
+    "translationRu": "комната",
+    "transcription": "[ruːm]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 156,
+    "word": "why?",
+    "translation": "warum?",
+    "translationRu": "почему?",
+    "transcription": "[waɪ]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 157,
+    "word": "an hour",
+    "translation": "eine Stunde",
+    "translationRu": "час",
+    "transcription": "[ˈaʊə]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 158,
+    "word": "for",
+    "translation": "für",
+    "translationRu": "для",
+    "transcription": "[fɔː]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 159,
+    "word": "it/he/she isn’t here",
+    "translation": "Es/Er/Sie ist nicht hier",
+    "translationRu": "его/её/этого нет здесь",
+    "transcription": "[ˈɪznt hɪə]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 160,
+    "word": "here",
+    "translation": "hier; hierher",
+    "translationRu": "здесь; сюда",
+    "transcription": "[hɪə]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 161,
+    "word": "Sorry.",
+    "translation": "Verzeihung; Entschuldigung",
+    "translationRu": "извини",
+    "transcription": "[ˈsɒri]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 162,
+    "word": "Who?",
+    "translation": "Wer?",
+    "translationRu": "Кто?",
+    "transcription": "[huː]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 163,
+    "word": "brother",
+    "translation": "der Bruder",
+    "translationRu": "брат",
+    "transcription": "[ˈbrʌðə]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 164,
+    "word": "sister",
+    "translation": "die Schwester",
+    "translationRu": "сестра",
+    "transcription": "[ˈsɪstə]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 165,
+    "word": "Yes, I am.",
+    "translation": "Ja, das bin ich.",
+    "translationRu": "Да.",
+    "transcription": "[jes aɪ æm]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 166,
+    "word": "See you.",
+    "translation": "Bis gleich. / Bis bald.",
+    "translationRu": "Увидимся.",
+    "transcription": "[siː juː]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 167,
+    "word": "You're lucky.",
+    "translation": "Du hast Glück.",
+    "translationRu": "Тебе повезло.",
+    "transcription": "[jʊə ˈlʌki]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 168,
+    "word": "sure",
+    "translation": "sicher",
+    "translationRu": "уверен",
+    "transcription": "[ʃʊə]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 169,
+    "word": "smile",
+    "translation": "das Lächeln",
+    "translationRu": "улыбка",
+    "transcription": "[smaɪl]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 170,
+    "word": "sometimes",
+    "translation": "manchmal",
+    "translationRu": "иногда",
+    "transcription": "[ˈsʌmtaɪmz]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 171,
+    "word": "weird",
+    "translation": "seltsam, komisch",
+    "translationRu": "странный",
+    "transcription": "[wɪəd]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 172,
+    "word": "at school",
+    "translation": "in der Schule",
+    "translationRu": "в школе",
+    "transcription": "[æt skuːl]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 173,
+    "word": "she’s",
+    "translation": "sie ist …",
+    "translationRu": "она есть",
+    "transcription": "[ʃiːz]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 174,
+    "word": "they aren’t",
+    "translation": "sie sind nicht",
+    "translationRu": "они не",
+    "transcription": "[ðeɪ ɑːnt]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 175,
+    "word": "they’re",
+    "translation": "sie sind",
+    "translationRu": "они есть",
+    "transcription": "[ðeə]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 176,
+    "word": "divorced",
+    "translation": "geschieden",
+    "translationRu": "разведённый",
+    "transcription": "[dɪˈvɔːst]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 177,
+    "word": "parents",
+    "translation": "Eltern",
+    "translationRu": "родители",
+    "transcription": "[ˈpeərənts]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 178,
+    "word": "listen",
+    "translation": "zuhören, horchen",
+    "translationRu": "слушать",
+    "transcription": "[ˈlɪsn]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 179,
+    "word": "phone",
+    "translation": "das (Mobil-)Telefon, das Handy",
+    "translationRu": "телефон",
+    "transcription": "[fəʊn]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 180,
+    "word": "message",
+    "translation": "die Nachricht, die SMS",
+    "translationRu": "сообщение",
+    "transcription": "[ˈmesɪdʒ]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 181,
+    "word": "free",
+    "translation": "frei",
+    "translationRu": "свободный",
+    "transcription": "[friː]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 182,
+    "word": "hang out",
+    "translation": "hängen, abhängen, rumhängen",
+    "translationRu": "тусоваться",
+    "transcription": "[hæŋ aʊt]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 183,
+    "word": "at my place",
+    "translation": "bei mir",
+    "translationRu": "у меня",
+    "transcription": "[æt maɪ pleɪs]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 184,
+    "word": "place",
+    "translation": "der Ort, der Platz, die Stelle",
+    "translationRu": "место",
+    "transcription": "[pleɪs]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 185,
+    "word": "know",
+    "translation": "kennen",
+    "translationRu": "знать",
+    "transcription": "[nəʊ]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 186,
+    "word": "primary school",
+    "translation": "die Grundschule",
+    "translationRu": "начальная школа",
+    "transcription": "[ˈpraɪməri skuːl]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 187,
+    "word": "again",
+    "translation": "wieder; noch einmal",
+    "translationRu": "снова",
+    "transcription": "[əˈɡen]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 188,
+    "word": "Good morning.",
+    "translation": "Guten Morgen.",
+    "translationRu": "Доброе утро.",
+    "transcription": "[ɡʊd ˈmɔːnɪŋ]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 189,
+    "word": "Here’s ... / Here are ...",
+    "translation": "Hier ist … / Hier sind …",
+    "translationRu": "Вот …",
+    "transcription": "[hɪəz]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 190,
+    "word": "parcel",
+    "translation": "das Paket, das Päckchen",
+    "translationRu": "посылка",
+    "transcription": "[ˈpɑːsl]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 191,
+    "word": "very big",
+    "translation": "sehr groß",
+    "translationRu": "очень большой",
+    "transcription": "[ˈveri bɪɡ]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 192,
+    "word": "understand",
+    "translation": "verstehen",
+    "translationRu": "понимать",
+    "transcription": "[ˌʌndəˈstænd]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 193,
+    "word": "father",
+    "translation": "der Vater",
+    "translationRu": "отец",
+    "transcription": "[ˈfɑːðə]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 194,
+    "word": "mother",
+    "translation": "die Mutter",
+    "translationRu": "мать",
+    "transcription": "[ˈmʌðə]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 195,
+    "word": "useful",
+    "translation": "nützlich",
+    "translationRu": "полезный",
+    "transcription": "[ˈjuːsfl]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 196,
+    "word": "phrase",
+    "translation": "der Satz, der Ausdruck, die Redewendung",
+    "translationRu": "фраза, выражение",
+    "transcription": "[freɪz]",
+    "learned": false,
+    "page": 24
+  },
+  {
+    "id": 197,
+    "word": "grandma",
+    "translation": "die Oma; die Großmutter",
+    "translationRu": "бабушка",
+    "transcription": "[ˈɡrænˌmɑː]",
+    "learned": false,
+    "page": 25
+  },
+  {
+    "id": 198,
+    "word": "grandpa",
+    "translation": "der Opa; der Großvater",
+    "translationRu": "дедушка",
+    "transcription": "[ˈɡrænˌpɑː]",
+    "learned": false,
+    "page": 25
+  },
+  {
+    "id": 199,
+    "word": "aunt",
+    "translation": "die Tante",
+    "translationRu": "тётя",
+    "transcription": "[ɑːnt]",
+    "learned": false,
+    "page": 25
+  },
+  {
+    "id": 200,
+    "word": "uncle",
+    "translation": "der Onkel",
+    "translationRu": "дядя",
+    "transcription": "[ˈʌŋkl]",
+    "learned": false,
+    "page": 25
+  },
+  {
+    "id": 201,
+    "word": "cousin",
+    "translation": "der Cousin, die Cousine",
+    "translationRu": "двоюродный брат / двоюродная сестра",
+    "transcription": "[ˈkʌzn]",
+    "learned": false,
+    "page": 25
+  },
+  {
+    "id": 202,
+    "word": "some",
+    "translation": "einige, ein paar; etwas",
+    "translationRu": "несколько; немного",
+    "transcription": "[sʌm]",
+    "learned": false,
+    "page": 25
+  },
+  {
+    "id": 203,
+    "word": "English",
+    "translation": "Englisch; englisch",
+    "translationRu": "английский; английский язык",
+    "transcription": "[ˈɪŋɡlɪʃ]",
+    "learned": false,
+    "page": 25
+  },
+  {
+    "id": 204,
+    "word": "word",
+    "translation": "das Wort",
+    "translationRu": "слово",
+    "transcription": "[wɜːd]",
+    "learned": false,
+    "page": 25
+  },
+  {
+    "id": 205,
+    "word": "like words in other languages",
+    "translation": "wie Wörter in anderen Sprachen",
+    "translationRu": "как слова в других языках",
+    "transcription": "[laɪk wɜːdz ɪn ˈʌðə ˈlæŋɡwɪdʒɪz]",
+    "learned": false,
+    "page": 25
+  },
+  {
+    "id": 206,
+    "word": "other",
+    "translation": "andere(r, s)",
+    "translationRu": "другой",
+    "transcription": "[ˈʌðə]",
+    "learned": false,
+    "page": 25
+  },
+  {
+    "id": 207,
+    "word": "language",
+    "translation": "die Sprache",
+    "translationRu": "язык",
+    "transcription": "[ˈlæŋɡwɪdʒ]",
+    "learned": false,
+    "page": 25
+  },
+  {
+    "id": 208,
+    "word": "e.g.",
+    "translation": "z. B. (zum Beispiel) (exempli gratia)",
+    "translationRu": "напр. (например)",
+    "transcription": "[iː ˈdʒiː]",
+    "learned": false,
+    "page": 25
+  },
+  {
+    "id": 209,
+    "word": "help",
+    "translation": "(to) helfen; die Hilfe",
+    "translationRu": "помогать; помощь",
+    "transcription": "[help]",
+    "learned": false,
+    "page": 25
+  },
+  {
+    "id": 210,
+    "word": "when",
+    "translation": "wenn",
+    "translationRu": "когда",
+    "transcription": "[wen]",
+    "learned": false,
+    "page": 25
+  },
+  {
+    "id": 211,
+    "word": "learn",
+    "translation": "lernen",
+    "translationRu": "учить(ся)",
+    "transcription": "[lɜːn]",
+    "learned": false,
+    "page": 25
+  },
+  {
+    "id": 212,
+    "word": "talk (to)",
+    "translation": "reden (mit), sich unterhalten (mit)",
+    "translationRu": "разговаривать (с)",
+    "transcription": "[tɔːk]",
+    "learned": false,
+    "page": 25
+  },
+  {
+    "id": 213,
+    "word": "people (pl)",
+    "translation": "Leute, Menschen",
+    "translationRu": "люди",
+    "transcription": "[ˈpiːpl]",
+    "learned": false,
+    "page": 25
+  },
+  {
+    "id": 214,
+    "word": "umbrella",
+    "translation": "der Schirm, der Regenschirm",
+    "translationRu": "зонт",
+    "transcription": "[ʌmˈbrelə]",
+    "learned": false,
+    "page": 26
+  },
+  {
+    "id": 215,
+    "word": "type",
+    "translation": "tippen",
+    "translationRu": "печатать (на клавиатуре)",
+    "transcription": "[taɪp]",
+    "learned": false,
+    "page": 26
+  },
+  {
+    "id": 216,
+    "word": "pronounce",
+    "translation": "aussprechen",
+    "translationRu": "произносить",
+    "transcription": "[prəˈnaʊns]",
+    "learned": false,
+    "page": 26
+  },
+  {
+    "id": 217,
+    "word": "then",
+    "translation": "dann",
+    "translationRu": "затем",
+    "transcription": "[ðen]",
+    "learned": false,
+    "page": 26
+  },
+  {
+    "id": 218,
+    "word": "hear",
+    "translation": "hören",
+    "translationRu": "слышать",
+    "transcription": "[hɪə]",
+    "learned": false,
+    "page": 26
+  },
+  {
+    "id": 219,
+    "word": "say",
+    "translation": "sagen",
+    "translationRu": "сказать",
+    "transcription": "[seɪ]",
+    "learned": false,
+    "page": 26
+  },
+  {
+    "id": 220,
+    "word": "question",
+    "translation": "die Frage",
+    "translationRu": "вопрос",
+    "transcription": "[ˈkwestʃən]",
+    "learned": false,
+    "page": 28
+  },
+  {
+    "id": 221,
+    "word": "answer",
+    "translation": "die Antwort",
+    "translationRu": "ответ",
+    "transcription": "[ˈɑːnsə]",
+    "learned": false,
+    "page": 28
+  },
+  {
+    "id": 222,
+    "word": "your favourite book",
+    "translation": "dein Lieblingsbuch",
+    "translationRu": "твоя любимая книга",
+    "transcription": "[ˈfeɪvərɪt]",
+    "learned": false,
+    "page": 28
+  },
+  {
+    "id": 223,
+    "word": "use",
+    "translation": "benutzen, verwenden",
+    "translationRu": "использовать",
+    "transcription": "[juːz]",
+    "learned": false,
+    "page": 28
+  },
+  {
+    "id": 224,
+    "word": "or",
+    "translation": "oder",
+    "translationRu": "или",
+    "transcription": "[ɔː]",
+    "learned": false,
+    "page": 29
+  },
+  {
+    "id": 225,
+    "word": "before a, e, i, o, u",
+    "translation": "vor A, E, I, O, U",
+    "translationRu": "перед A, E, I, O, U",
+    "transcription": "[bɪˈfɔː]",
+    "learned": false,
+    "page": 29
+  },
+  {
+    "id": 226,
+    "word": "letter",
+    "translation": "der Buchstabe",
+    "translationRu": "буква",
+    "transcription": "[ˈletə]",
+    "learned": false,
+    "page": 29
+  },
+  {
+    "id": 227,
+    "word": "careful",
+    "translation": "vorsichtig",
+    "translationRu": "осторожный",
+    "transcription": "[ˈkeəfl]",
+    "learned": false,
+    "page": 29
+  },
+  {
+    "id": 228,
+    "word": "conversation",
+    "translation": "das Gespräch, die Unterhaltung",
+    "translationRu": "разговор, беседа",
+    "transcription": "[ˌkɒnvəˈseɪʃn]",
+    "learned": false,
+    "page": 29
+  },
+  {
+    "id": 229,
+    "word": "There are ...",
+    "translation": "Es sind … / Es gibt …",
+    "translationRu": "есть … (мн.ч.)",
+    "transcription": "[ðeə ɑː]",
+    "learned": false,
+    "page": 29
+  },
+  {
+    "id": 230,
+    "word": "There's ...",
+    "translation": "Es ist … / Es gibt …",
+    "translationRu": "есть … (ед.ч.)",
+    "transcription": "[ðeəz]",
+    "learned": false,
+    "page": 29
+  },
+  {
+    "id": 231,
+    "word": "its",
+    "translation": "sein(e); ihr(e)",
+    "translationRu": "его; её (о предмете/животном)",
+    "transcription": "[ɪts]",
+    "learned": false,
+    "page": 29
+  },
+  {
+    "id": 232,
+    "word": "Lily's letter",
+    "translation": "Lilys Brief",
+    "translationRu": "письмо Лили",
+    "transcription": "[ˈlɪliz ˈletə]",
+    "learned": false,
+    "page": 30
+  },
+  {
+    "id": 233,
+    "word": "full stop",
+    "translation": "der Punkt (Satzzeichen)",
+    "translationRu": "точка (знак препинания)",
+    "transcription": "[fʊl stɒp]",
+    "learned": false,
+    "page": 30
+  },
+  {
+    "id": 234,
+    "word": "in English / in German",
+    "translation": "auf Englisch / auf Deutsch",
+    "translationRu": "по‑английски / по‑немецки",
+    "transcription": "[ɪn ˈɪŋɡlɪʃ / ɪn ˈdʒɜːmən]",
+    "learned": false,
+    "page": 30
+  },
+  {
+    "id": 235,
+    "word": "the first word",
+    "translation": "das erste Wort",
+    "translationRu": "первое слово",
+    "transcription": "[ðə fɜːst wɜːd]",
+    "learned": false,
+    "page": 30
+  },
+  {
+    "id": 236,
+    "word": "sentence",
+    "translation": "der Satz",
+    "translationRu": "предложение",
+    "transcription": "[ˈsentəns]",
+    "learned": false,
+    "page": 30
+  },
+  {
+    "id": 237,
+    "word": "step",
+    "translation": "der Schritt",
+    "translationRu": "шаг",
+    "transcription": "[step]",
+    "learned": false,
+    "page": 31
+  },
+  {
+    "id": 238,
+    "word": "draw",
+    "translation": "zeichnen",
+    "translationRu": "рисовать",
+    "transcription": "[drɔː]",
+    "learned": false,
+    "page": 31
+  },
+  {
+    "id": 239,
+    "word": "write",
+    "translation": "schreiben",
+    "translationRu": "писать",
+    "transcription": "[raɪt]",
+    "learned": false,
+    "page": 31
+  },
+  {
+    "id": 240,
+    "word": "this (classroom/city/name)",
+    "translation": "dieses Klassenzimmer / diese Stadt / dieser Name",
+    "translationRu": "этот класс / этот город / это имя",
+    "transcription": "[ðɪs]",
+    "learned": false,
+    "page": 31
+  },
+  {
+    "id": 241,
+    "word": "look at sth./sb.",
+    "translation": "etwas / jn. anschauen, ansehen",
+    "translationRu": "смотреть на что‑то / кого‑то",
+    "transcription": "[lʊk]",
+    "learned": false,
+    "page": 31
+  },
+  {
+    "id": 242,
+    "word": "look sth. up",
+    "translation": "etwas nachschlagen",
+    "translationRu": "искать (в словаре, справочнике)",
+    "transcription": "[lʊk ʌp]",
+    "learned": false,
+    "page": 31
+  },
+  {
+    "id": 243,
+    "word": "check",
+    "translation": "(über)prüfen, kontrollieren",
+    "translationRu": "проверять",
+    "transcription": "[tʃek]",
+    "learned": false,
+    "page": 31
+  },
+  {
+    "id": 244,
+    "word": "get",
+    "translation": "(sich) etwas besorgen, (sich) etwas holen",
+    "translationRu": "доставать, получать",
+    "transcription": "[ɡet]",
+    "learned": false,
+    "page": 32
+  },
+  {
+    "id": 245,
+    "word": "drink",
+    "translation": "das Getränk",
+    "translationRu": "напиток",
+    "transcription": "[drɪŋk]",
+    "learned": false,
+    "page": 32
+  },
+  {
+    "id": 246,
+    "word": "drink (verb)",
+    "translation": "trinken",
+    "translationRu": "пить",
+    "transcription": "[drɪŋk]",
+    "learned": false,
+    "page": 32
+  },
+  {
+    "id": 247,
+    "word": "Are there any ...?",
+    "translation": "Gibt es (irgendwelche) ...?",
+    "translationRu": "Есть ли ...?",
+    "transcription": "[ˈeni]",
+    "learned": false,
+    "page": 32
+  },
+  {
+    "id": 248,
+    "word": "glass",
+    "translation": "das Glas",
+    "translationRu": "стакан, стекло",
+    "transcription": "[ɡlɑːs]",
+    "learned": false,
+    "page": 32
+  },
+  {
+    "id": 249,
+    "word": "kitchen",
+    "translation": "die Küche",
+    "translationRu": "кухня",
+    "transcription": "[ˈkɪtʃn]",
+    "learned": false,
+    "page": 32
+  },
+  {
+    "id": 250,
+    "word": "fun",
+    "translation": "Spaß machen",
+    "translationRu": "быть весёлым, доставлять удовольствие",
+    "transcription": "[fʌn]",
+    "learned": false,
+    "page": 32
+  },
+  {
+    "id": 251,
+    "word": "have fun",
+    "translation": "Spaß haben, sich amüsieren",
+    "translationRu": "веселиться",
+    "transcription": "[hæv fʌn]",
+    "learned": false,
+    "page": 32
+  },
+  {
+    "id": 252,
+    "word": "bedroom",
+    "translation": "das Schlafzimmer",
+    "translationRu": "спальня",
+    "transcription": "[ˈbedruːm]",
+    "learned": false,
+    "page": 32
+  },
+  {
+    "id": 253,
+    "word": "quiet",
+    "translation": "ruhig, still, leise",
+    "translationRu": "тихий, спокойный",
+    "transcription": "[ˈkwaɪət]",
+    "learned": false,
+    "page": 32
+  },
+  {
+    "id": 254,
+    "word": "tidy",
+    "translation": "ordentlich",
+    "translationRu": "аккуратный",
+    "transcription": "[ˈtaɪdi]",
+    "learned": false,
+    "page": 32
+  },
+  {
+    "id": 255,
+    "word": "clothes",
+    "translation": "die Kleidung, Kleidungsstücke",
+    "translationRu": "одежда",
+    "transcription": "[kləʊðz]",
+    "learned": false,
+    "page": 32
+  },
+  {
+    "id": 256,
+    "word": "on the bed",
+    "translation": "auf dem Bett",
+    "translationRu": "на кровати",
+    "transcription": "[ɒn ðə bed]",
+    "learned": false,
+    "page": 32
+  },
+  {
+    "id": 257,
+    "word": "on that chair",
+    "translation": "auf dem Stuhl (dort), auf jenem Stuhl",
+    "translationRu": "на том стуле",
+    "transcription": "[ðæt tʃeə]",
+    "learned": false,
+    "page": 32
+  },
+  {
+    "id": 258,
+    "word": "shelf",
+    "translation": "das Regal",
+    "translationRu": "полка",
+    "transcription": "[ʃelf]",
+    "learned": false,
+    "page": 33
+  },
+  {
+    "id": 259,
+    "word": "lamp",
+    "translation": "die Lampe",
+    "translationRu": "лампа",
+    "transcription": "[læmp]",
+    "learned": false,
+    "page": 33
+  },
+  {
+    "id": 260,
+    "word": "toilet",
+    "translation": "die Toilette",
+    "translationRu": "туалет",
+    "transcription": "[ˈtɔɪlət]",
+    "learned": false,
+    "page": 33
+  },
+  {
+    "id": 261,
+    "word": "bath",
+    "translation": "das Bad",
+    "translationRu": "ванна",
+    "transcription": "[bɑːθ]",
+    "learned": false,
+    "page": 33
+  },
+  {
+    "id": 262,
+    "word": "bathroom",
+    "translation": "das Badezimmer, das Bad",
+    "translationRu": "ванная комната",
+    "transcription": "[ˈbɑːθruːm]",
+    "learned": false,
+    "page": 33
+  },
+  {
+    "id": 263,
+    "word": "armchair",
+    "translation": "der Sessel",
+    "translationRu": "кресло",
+    "transcription": "[ˈɑːmtʃeə]",
+    "learned": false,
+    "page": 33
+  },
+  {
+    "id": 264,
+    "word": "cupboard",
+    "translation": "der Schrank",
+    "translationRu": "шкаф (кухонный)",
+    "transcription": "[ˈkʌbəd]",
+    "learned": false,
+    "page": 33
+  },
+  {
+    "id": 265,
+    "word": "sink",
+    "translation": "das Abwaschbecken, das Spülbecken",
+    "translationRu": "раковина",
+    "transcription": "[sɪŋk]",
+    "learned": false,
+    "page": 33
+  },
+  {
+    "id": 266,
+    "word": "chant",
+    "translation": "der Sprechchor",
+    "translationRu": "скандирование (хором)",
+    "transcription": "[tʃɑːnt]",
+    "learned": false,
+    "page": 34
+  },
+  {
+    "id": 267,
+    "word": "rule",
+    "translation": "die Regel, die Vorschrift",
+    "translationRu": "правило",
+    "transcription": "[ruːl]",
+    "learned": false,
+    "page": 34
+  },
+  {
+    "id": 268,
+    "word": "describe (sth. to sb.)",
+    "translation": "(jm.) etwas beschreiben",
+    "translationRu": "описывать (что‑то кому‑то)",
+    "transcription": "[dɪˈskraɪb]",
+    "learned": false,
+    "page": 35
+  },
+  {
+    "id": 269,
+    "word": "area",
+    "translation": "das Gebiet, die Gegend",
+    "translationRu": "район; местность",
+    "transcription": "[ˈeəriə]",
+    "learned": false,
+    "page": 36
+  },
+  {
+    "id": 270,
+    "word": "make",
+    "translation": "bilden; machen; herstellen",
+    "translationRu": "делать; образовывать; производить",
+    "transcription": "[meɪk]",
+    "learned": false,
+    "page": 37
+  },
+  {
+    "id": 271,
+    "word": "do",
+    "translation": "machen, tun",
+    "translationRu": "делать",
+    "transcription": "[duː]",
+    "learned": false,
+    "page": 37
+  },
+  {
+    "id": 272,
+    "word": "visit",
+    "translation": "besuchen",
+    "translationRu": "посещать",
+    "transcription": "[ˈvɪzɪt]",
+    "learned": false,
+    "page": 37
+  },
+  {
+    "id": 273,
+    "word": "culture",
+    "translation": "die Kultur",
+    "translationRu": "культура",
+    "transcription": "[ˈkʌltʃə]",
+    "learned": false,
+    "page": 37
+  },
+  {
+    "id": 274,
+    "word": "guest",
+    "translation": "der Gast",
+    "translationRu": "гость",
+    "transcription": "[ɡest]",
+    "learned": false,
+    "page": 37
+  },
+  {
+    "id": 275,
+    "word": "easy",
+    "translation": "einfach, leicht",
+    "translationRu": "лёгкий, простой",
+    "transcription": "[ˈiːzi]",
+    "learned": false,
+    "page": 37
+  },
+  {
+    "id": 276,
+    "word": "flat",
+    "translation": "die Wohnung",
+    "translationRu": "квартира",
+    "transcription": "[flæt]",
+    "learned": false,
+    "page": 37
+  },
+  {
+    "id": 277,
+    "word": "furniture",
+    "translation": "die Möbel (pl)",
+    "translationRu": "мебель",
+    "transcription": "[ˈfɜːnɪtʃə]",
+    "learned": false,
+    "page": 37
+  },
+  {
+    "id": 278,
+    "word": "important",
+    "translation": "wichtig",
+    "translationRu": "важный",
+    "transcription": "[ɪmˈpɔːtnt]",
+    "learned": false,
+    "page": 37
+  },
+  {
+    "id": 279,
+    "word": "another",
+    "translation": "ein(e) andere(r, s); noch ein(e)",
+    "translationRu": "другой; ещё один",
+    "transcription": "[əˈnʌðə]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 280,
+    "word": "joke",
+    "translation": "der Witz",
+    "translationRu": "шутка",
+    "transcription": "[dʒəʊk]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 281,
+    "word": "play",
+    "translation": "spielen",
+    "translationRu": "играть",
+    "transcription": "[pleɪ]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 282,
+    "word": "funny",
+    "translation": "witzig, komisch",
+    "translationRu": "смешной, забавный",
+    "transcription": "[ˈfʌni]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 283,
+    "word": "You're right / wrong.",
+    "translation": "Du hast Recht / Unrecht.",
+    "translationRu": "Ты прав / не прав.",
+    "transcription": "[jʊə raɪt / rɒŋ]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 284,
+    "word": "I can't ...",
+    "translation": "ich kann nicht …",
+    "translationRu": "я не могу …",
+    "transcription": "[kɑːnt]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 285,
+    "word": "(to) play the guitar",
+    "translation": "Gitarre spielen",
+    "translationRu": "играть на гитаре",
+    "transcription": "[pleɪ ðə ɡɪˈtɑː]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 286,
+    "word": "amazing",
+    "translation": "erstaunlich, unglaublich",
+    "translationRu": "удивительный, потрясающий",
+    "transcription": "[əˈmeɪzɪŋ]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 287,
+    "word": "bad",
+    "translation": "schlecht, schlimm",
+    "translationRu": "плохой",
+    "transcription": "[bæd]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 288,
+    "word": "dinner",
+    "translation": "das Abendessen, das Abendbrot",
+    "translationRu": "ужин",
+    "transcription": "[ˈdɪnə]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 289,
+    "word": "time",
+    "translation": "die Zeit; die Uhrzeit",
+    "translationRu": "время",
+    "transcription": "[taɪm]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 290,
+    "word": "soon",
+    "translation": "bald",
+    "translationRu": "скоро",
+    "transcription": "[suːn]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 291,
+    "word": "open (verb)",
+    "translation": "öffnen, aufmachen",
+    "translationRu": "открывать",
+    "transcription": "[ˈəʊpən]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 292,
+    "word": "open (adjective)",
+    "translation": "offen",
+    "translationRu": "открытый",
+    "transcription": "[ˈəʊpən]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 293,
+    "word": "stay",
+    "translation": "bleiben",
+    "translationRu": "оставаться",
+    "transcription": "[steɪ]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 294,
+    "word": "idea",
+    "translation": "die Idee; die Vorstellung",
+    "translationRu": "идея",
+    "transcription": "[aɪˈdɪə]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 295,
+    "word": "many",
+    "translation": "viele",
+    "translationRu": "много (исчисл.)",
+    "transcription": "[ˈmeni]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 296,
+    "word": "remember (sth.)",
+    "translation": "sich erinnern (an etwas)",
+    "translationRu": "помнить, вспоминать (о чём‑то)",
+    "transcription": "[rɪˈmembə]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 297,
+    "word": "all",
+    "translation": "alles; alle",
+    "translationRu": "всё; все",
+    "transcription": "[ɔːl]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 298,
+    "word": "face",
+    "translation": "das Gesicht",
+    "translationRu": "лицо",
+    "transcription": "[feɪs]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 299,
+    "word": "friendly",
+    "translation": "freundlich",
+    "translationRu": "дружелюбный",
+    "transcription": "[ˈfrendli]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 300,
+    "word": "my best friend",
+    "translation": "mein bester Freund / meine beste Freundin",
+    "translationRu": "мой лучший друг / моя лучшая подруга",
+    "transcription": "[maɪ best frend]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 301,
+    "word": "a bit",
+    "translation": "ein bisschen, etwas",
+    "translationRu": "немного",
+    "transcription": "[ə bɪt]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 302,
+    "word": "mean",
+    "translation": "gemein",
+    "translationRu": "злой, противный",
+    "transcription": "[miːn]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 303,
+    "word": "laugh",
+    "translation": "lachen",
+    "translationRu": "смеяться",
+    "transcription": "[lɑːf]",
+    "learned": false,
+    "page": 38
+  },
+  {
+    "id": 304,
+    "word": "false",
+    "translation": "falsch",
+    "translationRu": "ложный",
+    "transcription": "[fɔːls]",
+    "learned": false,
+    "page": 39
+  },
+  {
+    "id": 305,
+    "word": "true",
+    "translation": "wahr",
+    "translationRu": "правдивый",
+    "transcription": "[truː]",
+    "learned": false,
+    "page": 39
+  },
+  {
+    "id": 306,
+    "word": "line",
+    "translation": "die Zeile",
+    "translationRu": "строка",
+    "transcription": "[laɪn]",
+    "learned": false,
+    "page": 39
+  },
+  {
+    "id": 307,
+    "word": "character",
+    "translation": "der Charakter, die Figur, die Person (im Roman, Film usw.)",
+    "translationRu": "персонаж, герой",
+    "transcription": "[ˈkærəktə]",
+    "learned": false,
+    "page": 39
+  },
+  {
+    "id": 308,
+    "word": "already",
+    "translation": "schon, bereits",
+    "translationRu": "уже",
+    "transcription": "[ɔːlˈredi]",
+    "learned": false,
+    "page": 39
+  },
+  {
+    "id": 309,
+    "word": "story",
+    "translation": "die Geschichte, die Erzählung",
+    "translationRu": "история, рассказ",
+    "transcription": "[ˈstɔːri]",
+    "learned": false,
+    "page": 39
+  },
+  {
+    "id": 310,
+    "word": "kid",
+    "translation": "das Kind; Jugendliche(r)",
+    "translationRu": "ребёнок; подросток",
+    "transcription": "[kɪd]",
+    "learned": false,
+    "page": 39
+  },
+  {
+    "id": 311,
+    "word": "her",
+    "translation": "sie; ihr",
+    "translationRu": "она; её",
+    "transcription": "[hɜː], [hə]",
+    "learned": false,
+    "page": 39
+  },
+  {
+    "id": 312,
+    "word": "life skills",
+    "translation": "Lebenskompetenzen, lebenswichtige Fertigkeiten",
+    "translationRu": "жизненные навыки",
+    "transcription": "[ˈlaɪf skɪlz]",
+    "learned": false,
+    "page": 39
+  },
+  {
+    "id": 313,
+    "word": "make friends",
+    "translation": "Freunde finden",
+    "translationRu": "заводить друзей",
+    "transcription": "[meɪk frendz]",
+    "learned": false,
+    "page": 39
+  },
+  {
+    "id": 314,
+    "word": "ask",
+    "translation": "fragen",
+    "translationRu": "спрашивать",
+    "transcription": "[ɑːsk]",
+    "learned": false,
+    "page": 39
+  },
+  {
+    "id": 315,
+    "word": "ask (sb.) a question",
+    "translation": "(jm.) eine Frage stellen",
+    "translationRu": "задать кому‑то вопрос",
+    "transcription": "[ɑːsk ... ə ˈkwestʃən]",
+    "learned": false,
+    "page": 39
+  },
+  {
+    "id": 316,
+    "word": "Have a go.",
+    "translation": "Versuch’s mal.",
+    "translationRu": "Попробуй.",
+    "transcription": "[hæv ə ˈɡəʊ]",
+    "learned": false,
+    "page": 39
+  },
+  {
+    "id": 317,
+    "word": "to",
+    "translation": "um zu",
+    "translationRu": "частица to; чтобы",
+    "transcription": "[tuː], [tə]",
+    "learned": false,
+    "page": 41
+  },
+  {
+    "id": 318,
+    "word": "after the s",
+    "translation": "nach dem S",
+    "translationRu": "после s",
+    "transcription": "[ˈɑːftə]",
+    "learned": false,
+    "page": 41
+  },
+  {
+    "id": 319,
+    "word": "zero",
+    "translation": "Null",
+    "translationRu": "ноль",
+    "transcription": "[ˈzɪərəʊ]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 320,
+    "word": "to (bis)",
+    "translation": "bis",
+    "translationRu": "до",
+    "transcription": "[tuː]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 321,
+    "word": "O (telefon numbers)",
+    "translation": "Null (in Telefonnummern)",
+    "translationRu": "ноль (в телефонных номерах)",
+    "transcription": "[əʊ]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 322,
+    "word": "thirteen",
+    "translation": "dreizehn",
+    "translationRu": "тринадцать",
+    "transcription": "[ˌθɜːˈtiːn]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 323,
+    "word": "fourteen",
+    "translation": "vierzehn",
+    "translationRu": "четырнадцать",
+    "transcription": "[ˌfɔːˈtiːn]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 324,
+    "word": "fifteen",
+    "translation": "fünfzehn",
+    "translationRu": "пятнадцать",
+    "transcription": "[ˌfɪfˈtiːn]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 325,
+    "word": "sixteen",
+    "translation": "sechzehn",
+    "translationRu": "шестнадцать",
+    "transcription": "[ˌsɪksˈtiːn]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 326,
+    "word": "seventeen",
+    "translation": "siebzehn",
+    "translationRu": "семнадцать",
+    "transcription": "[ˌsev(ə)nˈtiːn]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 327,
+    "word": "eighteen",
+    "translation": "achtzehn",
+    "translationRu": "восемнадцать",
+    "transcription": "[ˌeɪˈtiːn]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 328,
+    "word": "nineteen",
+    "translation": "neunzehn",
+    "translationRu": "девятнадцать",
+    "transcription": "[ˌnaɪnˈtiːn]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 329,
+    "word": "twenty",
+    "translation": "zwanzig",
+    "translationRu": "двадцать",
+    "transcription": "[ˈtwenti]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 330,
+    "word": "twenty-one",
+    "translation": "einundzwanzig",
+    "translationRu": "двадцать один",
+    "transcription": "[ˈtwenti wʌn]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 331,
+    "word": "twenty-two",
+    "translation": "zweiundzwanzig",
+    "translationRu": "двадцать два",
+    "transcription": "[ˈtwenti tuː]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 332,
+    "word": "twenty-three",
+    "translation": "dreiundzwanzig",
+    "translationRu": "двадцать три",
+    "transcription": "[ˈtwenti θriː]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 333,
+    "word": "twenty-four",
+    "translation": "vierundzwanzig",
+    "translationRu": "двадцать четыре",
+    "transcription": "[ˈtwenti fɔː]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 334,
+    "word": "twenty-five",
+    "translation": "fünfundzwanzig",
+    "translationRu": "двадцать пять",
+    "transcription": "[ˈtwenti faɪv]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 335,
+    "word": "twenty-six",
+    "translation": "sechsundzwanzig",
+    "translationRu": "двадцать шесть",
+    "transcription": "[ˈtwenti sɪks]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 336,
+    "word": "thirty",
+    "translation": "dreißig",
+    "translationRu": "тридцать",
+    "transcription": "[ˈθɜːti]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 337,
+    "word": "thirty-one",
+    "translation": "einunddreißig",
+    "translationRu": "тридцать один",
+    "transcription": "[ˈθɜːti wʌn]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 338,
+    "word": "thirty-two",
+    "translation": "zweiunddreißig",
+    "translationRu": "тридцать два",
+    "transcription": "[ˈθɜːti tuː]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 339,
+    "word": "forty",
+    "translation": "vierzig",
+    "translationRu": "сорок",
+    "transcription": "[ˈfɔːti]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 340,
+    "word": "fifty",
+    "translation": "fünfzig",
+    "translationRu": "пятьдесят",
+    "transcription": "[ˈfɪfti]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 341,
+    "word": "sixty",
+    "translation": "sechzig",
+    "translationRu": "шестьдесят",
+    "transcription": "[ˈsɪksti]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 342,
+    "word": "seventy",
+    "translation": "siebzig",
+    "translationRu": "семьдесят",
+    "transcription": "[ˈsev(ə)nti]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 343,
+    "word": "eighty",
+    "translation": "achtzig",
+    "translationRu": "восемьдесят",
+    "transcription": "[ˈeɪti]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 344,
+    "word": "ninety",
+    "translation": "neunzig",
+    "translationRu": "девяносто",
+    "transcription": "[ˈnaɪnti]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 345,
+    "word": "hundred",
+    "translation": "hundert",
+    "translationRu": "сто",
+    "transcription": "[ˈhʌndrəd]",
+    "learned": false,
+    "page": 42
+  },
+  {
+    "id": 346,
+    "word": "one",
+    "translation": "eins",
+    "translationRu": "один",
+    "transcription": "[wʌn]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 347,
+    "word": "two",
+    "translation": "zwei",
+    "translationRu": "два",
+    "transcription": "[tuː]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 348,
+    "word": "three",
+    "translation": "drei",
+    "translationRu": "три",
+    "transcription": "[θriː]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 349,
+    "word": "four",
+    "translation": "vier",
+    "translationRu": "четыре",
+    "transcription": "[fɔː]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 350,
+    "word": "five",
+    "translation": "fünf",
+    "translationRu": "пять",
+    "transcription": "[faɪv]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 351,
+    "word": "six",
+    "translation": "sechs",
+    "translationRu": "шесть",
+    "transcription": "[sɪks]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 352,
+    "word": "seven",
+    "translation": "sieben",
+    "translationRu": "семь",
+    "transcription": "[ˈsevən]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 353,
+    "word": "eight",
+    "translation": "acht",
+    "translationRu": "восемь",
+    "transcription": "[eɪt]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 354,
+    "word": "nine",
+    "translation": "neun",
+    "translationRu": "девять",
+    "transcription": "[naɪn]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 355,
+    "word": "ten",
+    "translation": "zehn",
+    "translationRu": "десять",
+    "transcription": "[ten]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 356,
+    "word": "eleven",
+    "translation": "elf",
+    "translationRu": "одиннадцать",
+    "transcription": "[ɪˈlevən]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 357,
+    "word": "twelve",
+    "translation": "zwölf",
+    "translationRu": "двенадцать",
+    "transcription": "[twelv]",
+    "learned": false,
+    "page": 8
+  },
+  {
+    "id": 358,
+    "word": "talk",
+    "translation": "der Vortrag, das Referat, die Rede, der Bericht",
+    "translationRu": "доклад; речь; сообщение",
+    "transcription": "[tɔːk]",
+    "learned": false,
+    "page": 43
+  },
+  {
+    "id": 359,
+    "word": "the gist",
+    "translation": "das Wesentliche, der Hauptinhalt",
+    "translationRu": "суть, основное содержание",
+    "transcription": "[dʒɪst]",
+    "learned": false,
+    "page": 43
+  },
+  {
+    "id": 360,
+    "word": "detail",
+    "translation": "das Detail, die Einzelheit",
+    "translationRu": "деталь, подробность",
+    "transcription": "[ˈdiːteɪl]",
+    "learned": false,
+    "page": 43
+  },
+  {
+    "id": 361,
+    "word": "partner",
+    "translation": "Partner/in",
+    "translationRu": "партнёр/партнёрша",
+    "transcription": "[ˈpɑːtnə]",
+    "learned": false,
+    "page": 43
+  },
+  {
+    "id": 362,
+    "word": "stepsister",
+    "translation": "die Stiefschwester",
+    "translationRu": "сводная сестра",
+    "transcription": "[ˈstepsɪstə]",
+    "learned": false,
+    "page": 43
+  },
+  {
+    "id": 363,
+    "word": "the main topic",
+    "translation": "das Hauptthema",
+    "translationRu": "главная тема",
+    "transcription": "[ðə meɪn ˈtɒpɪk]",
+    "learned": false,
+    "page": 43
+  },
+  {
+    "id": 364,
+    "word": "be good at (football/art/...)",
+    "translation": "gut sein in Fußball/Kunst/...; gut Fußball/Kunst/... können",
+    "translationRu": "хорошо получаться в..., быть способным в...",
+    "transcription": "[biː ɡʊd æt]",
+    "learned": false,
+    "page": 43
+  },
+  {
+    "id": 365,
+    "word": "first",
+    "translation": "zuerst, als Erstes",
+    "translationRu": "сначала, во-первых",
+    "transcription": "[fɜːst]",
+    "learned": false,
+    "page": 44
+  },
+  {
+    "id": 366,
+    "word": "speaker",
+    "translation": "Sprecher/in",
+    "translationRu": "спикер, оратор",
+    "transcription": "[ˈspiːkə]",
+    "learned": false,
+    "page": 44
+  },
+  {
+    "id": 367,
+    "word": "4 pm",
+    "translation": "4 Uhr nachmittags / 16 Uhr",
+    "translationRu": "4 часа дня / 16:00",
+    "transcription": "[ˌpiː ˈem]",
+    "learned": false,
+    "page": 46
+  },
+  {
+    "id": 368,
+    "word": "4 am",
+    "translation": "4 Uhr morgens, vormittags",
+    "translationRu": "4 часа утра",
+    "transcription": "[ˌeɪ ˈem]",
+    "learned": false,
+    "page": 46
+  },
+  {
+    "id": 369,
+    "word": "dark",
+    "translation": "dunkel",
+    "translationRu": "тёмный",
+    "transcription": "[dɑːk]",
+    "learned": false,
+    "page": 47
+  },
+  {
+    "id": 370,
+    "word": "box",
+    "translation": "der Kasten, die Kiste, das Kästchen",
+    "translationRu": "коробка, ящик",
+    "transcription": "[bɒks]",
+    "learned": false,
+    "page": 47
+  },
+  {
+    "id": 371,
+    "word": "scared",
+    "translation": "verängstigt",
+    "translationRu": "испуганный",
+    "transcription": "[skeəd]",
+    "learned": false,
+    "page": 47
+  },
+  {
+    "id": 372,
+    "word": "Well, ...",
+    "translation": "Nun, … / Also, … / Na ja, …",
+    "translationRu": "ну, итак…",
+    "transcription": "[wel]",
+    "learned": false,
+    "page": 48
+  },
+  {
+    "id": 373,
+    "word": "answer",
+    "translation": "antworten; beantworten",
+    "translationRu": "отвечать",
+    "transcription": "[ˈɑːnsə]",
+    "learned": false,
+    "page": 48
+  },
+  {
+    "id": 374,
+    "word": "It's magic.",
+    "translation": "Es ist Magie.",
+    "translationRu": "Это магия.",
+    "transcription": "[ˈmædʒɪk]",
+    "learned": false,
+    "page": 48
+  },
+  {
+    "id": 375,
+    "word": "ready",
+    "translation": "bereit, fertig",
+    "translationRu": "готовый",
+    "transcription": "[ˈredi]",
+    "learned": false,
+    "page": 48
+  },
+  {
+    "id": 376,
+    "word": "tell sb. about sth.",
+    "translation": "jm. von etwas erzählen",
+    "translationRu": "рассказывать кому‑то о чём‑то",
+    "transcription": "[tel]",
+    "learned": false,
+    "page": 48
+  },
+  {
+    "id": 377,
+    "word": "take",
+    "translation": "nehmen, mitnehmen; (weg-, hin)bringen",
+    "translationRu": "брать; взять; приносить/относить",
+    "transcription": "[teɪk]",
+    "learned": false,
+    "page": 48
+  },
+  {
+    "id": 378,
+    "word": "back",
+    "translation": "zurück",
+    "translationRu": "назад",
+    "transcription": "[bæk]",
+    "learned": false,
+    "page": 48
+  },
+  {
+    "id": 379,
+    "word": "around",
+    "translation": "um … (herum)",
+    "translationRu": "вокруг",
+    "transcription": "[əˈraʊnd]",
+    "learned": false,
+    "page": 49
+  },
+  {
+    "id": 380,
+    "word": "just",
+    "translation": "(einfach) nur, bloß",
+    "translationRu": "просто, лишь",
+    "transcription": "[dʒʌst]",
+    "learned": false,
+    "page": 49
+  },
+  {
+    "id": 381,
+    "word": "silly",
+    "translation": "albern, blöd",
+    "translationRu": "глупый",
+    "transcription": "[ˈsɪli]",
+    "learned": false,
+    "page": 49
+  },
+  {
+    "id": 382,
+    "word": "toy",
+    "translation": "das Spielzeug",
+    "translationRu": "игрушка",
+    "transcription": "[tɔɪ]",
+    "learned": false,
+    "page": 49
+  },
+  {
+    "id": 383,
+    "word": "want to do sth.",
+    "translation": "etwas tun wollen",
+    "translationRu": "хотеть что-то сделать",
+    "transcription": "[wɒnt]",
+    "learned": false,
+    "page": 52
+  },
+  {
+    "id": 384,
+    "word": "at 9 o’clock",
+    "translation": "um 9 Uhr / um 21 Uhr",
+    "translationRu": "в 9 часов / в 21 час",
+    "transcription": "[əˈklɒk]",
+    "learned": false,
+    "page": 53
+  },
+  {
+    "id": 385,
+    "word": "because",
+    "translation": "weil",
+    "translationRu": "потому что",
+    "transcription": "[bɪˈkɒz]",
+    "learned": false,
+    "page": 53
+  },
+  {
+    "id": 386,
+    "word": "half past eight",
+    "translation": "halb neun (08:30 / 20:30)",
+    "translationRu": "половина девятого (08:30 / 20:30)",
+    "transcription": "[hɑːf]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 387,
+    "word": "playground",
+    "translation": "der Schulhof, der Spielplatz",
+    "translationRu": "школьный двор, игровая площадка",
+    "transcription": "[ˈpleɪɡraʊnd]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 388,
+    "word": "early",
+    "translation": "früh",
+    "translationRu": "рано",
+    "transcription": "[ˈɜːli]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 389,
+    "word": "always",
+    "translation": "immer",
+    "translationRu": "всегда",
+    "transcription": "[ˈɔːlweɪz]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 390,
+    "word": "far",
+    "translation": "weit (entfernt)",
+    "translationRu": "далеко",
+    "transcription": "[fɑː]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 391,
+    "word": "bring",
+    "translation": "(mit-, her)bringen",
+    "translationRu": "приносить, привозить",
+    "transcription": "[brɪŋ]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 392,
+    "word": "every day / colour / book",
+    "translation": "jeder Tag / jede Farbe / jedes Buch",
+    "translationRu": "каждый день / каждый цвет / каждая книга",
+    "transcription": "[ˈevri]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 393,
+    "word": "before",
+    "translation": "bevor",
+    "translationRu": "перед, до",
+    "transcription": "[bɪˈfɔː]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 394,
+    "word": "go to work",
+    "translation": "zur Arbeit gehen/fahren",
+    "translationRu": "идти/ехать на работу",
+    "transcription": "[wɜːk]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 395,
+    "word": "walk",
+    "translation": "(zu Fuß) gehen",
+    "translationRu": "ходить пешком",
+    "transcription": "[wɔːk]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 396,
+    "word": "near",
+    "translation": "in der Nähe von, nahe (bei)",
+    "translationRu": "рядом, возле",
+    "transcription": "[nɪə]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 397,
+    "word": "What's he like?",
+    "translation": "Wie ist er (so)?",
+    "translationRu": "Какой он?",
+    "transcription": "[laɪk]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 398,
+    "word": "love",
+    "translation": "lieben, sehr mögen",
+    "translationRu": "любить, очень нравиться",
+    "transcription": "[lʌv]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 399,
+    "word": "there",
+    "translation": "da, dort; dahin, dorthin",
+    "translationRu": "там; туда",
+    "transcription": "[ðeə]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 400,
+    "word": "start",
+    "translation": "anfangen, beginnen",
+    "translationRu": "начинать",
+    "transcription": "[stɑːt]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 401,
+    "word": "noise",
+    "translation": "das Geräusch; der Lärm",
+    "translationRu": "шум",
+    "transcription": "[nɔɪz]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 402,
+    "word": "map",
+    "translation": "die Landkarte; der Stadtplan",
+    "translationRu": "карта",
+    "transcription": "[mæp]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 403,
+    "word": "helpful",
+    "translation": "hilfreich",
+    "translationRu": "полезный",
+    "transcription": "[ˈhelpfl]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 404,
+    "word": "grounds (pl)",
+    "translation": "das Gelände",
+    "translationRu": "территория",
+    "transcription": "[ɡraʊndz]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 405,
+    "word": "mail sth. (to sb.)",
+    "translation": "(jm.) etw. per E-Mail senden",
+    "translationRu": "отправлять (кому‑то) по электронной почте",
+    "transcription": "[meɪl]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 406,
+    "word": "lesson",
+    "translation": "die (Unterrichts-)Stunde",
+    "translationRu": "урок",
+    "transcription": "[ˈlesn]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 407,
+    "word": "take a photo (of sth.)",
+    "translation": "(etwas) fotografieren, ein Foto (von etwas) machen",
+    "translationRu": "фотографировать (что‑то)",
+    "transcription": "[teɪk ə ˈfəʊtə (əv)]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 408,
+    "word": "timetable",
+    "translation": "der Stundenplan",
+    "translationRu": "расписание",
+    "transcription": "[ˈtaɪmˌteɪbl]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 409,
+    "word": "be in a hurry",
+    "translation": "es eilig haben",
+    "translationRu": "спешить",
+    "transcription": "[ˈhʌri]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 410,
+    "word": "minute",
+    "translation": "die Minute",
+    "translationRu": "минута",
+    "transcription": "[ˈmɪnɪt]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 411,
+    "word": "Off we go!",
+    "translation": "Los geht’s!",
+    "translationRu": "Поехали! / Пошли!",
+    "transcription": "[]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 412,
+    "word": "happy",
+    "translation": "glücklich, froh",
+    "translationRu": "счастливый",
+    "transcription": "[ˈhæpi]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 413,
+    "word": "secret",
+    "translation": "das Geheimnis",
+    "translationRu": "секрет",
+    "transcription": "[ˈsiːkrət]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 414,
+    "word": "finish",
+    "translation": "enden",
+    "translationRu": "заканчивать",
+    "transcription": "[ˈfɪnɪʃ]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 415,
+    "word": "wait (for)",
+    "translation": "warten (auf)",
+    "translationRu": "ждать (чего‑то)",
+    "transcription": "[weɪt]",
+    "learned": false,
+    "page": 54
+  },
+  {
+    "id": 416,
+    "word": "(school) subject",
+    "translation": "das (Schul-)Fach",
+    "translationRu": "школьный предмет",
+    "transcription": "[ˈsʌbdʒɪkt]",
+    "learned": false,
+    "page": 55
+  },
+  {
+    "id": 417,
+    "word": "art",
+    "translation": "Kunst",
+    "translationRu": "искусство",
+    "transcription": "[ɑːt]",
+    "learned": false,
+    "page": 55
+  },
+  {
+    "id": 418,
+    "word": "design and technology",
+    "translation": "Design und Technik",
+    "translationRu": "дизайн и технология (труд)",
+    "transcription": "[dɪˈzaɪn ænd tekˈnɒlədʒi]",
+    "learned": false,
+    "page": 55
+  },
+  {
+    "id": 419,
+    "word": "drama",
+    "translation": "Schauspiel; darstellende Kunst",
+    "translationRu": "театр, драма",
+    "transcription": "[ˈdrɑːmə]",
+    "learned": false,
+    "page": 55
+  },
+  {
+    "id": 420,
+    "word": "French",
+    "translation": "Französisch",
+    "translationRu": "французский",
+    "transcription": "[frentʃ]",
+    "learned": false,
+    "page": 55
+  },
+  {
+    "id": 421,
+    "word": "geography",
+    "translation": "Geografie",
+    "translationRu": "география",
+    "transcription": "[dʒiˈɒɡrəfi]",
+    "learned": false,
+    "page": 55
+  },
+  {
+    "id": 422,
+    "word": "history",
+    "translation": "Geschichte",
+    "translationRu": "история",
+    "transcription": "[ˈhɪstri]",
+    "learned": false,
+    "page": 55
+  },
+  {
+    "id": 423,
+    "word": "ICT",
+    "translation": "Informations- und Kommunikationstechnologie",
+    "translationRu": "информационно-коммуникационные технологии",
+    "transcription": "[ˌaɪ siː ˈtiː]",
+    "learned": false,
+    "page": 55
+  },
+  {
+    "id": 424,
+    "word": "maths",
+    "translation": "Mathematik",
+    "translationRu": "математика",
+    "transcription": "[mæθs]",
+    "learned": false,
+    "page": 55
+  },
+  {
+    "id": 425,
+    "word": "third",
+    "translation": "dritte(r, s)",
+    "translationRu": "третий",
+    "transcription": "[θɜːd]",
+    "learned": false,
+    "page": 56
+  },
+  {
+    "id": 426,
+    "word": "sound",
+    "translation": "das Geräusch; der Klang",
+    "translationRu": "звук",
+    "transcription": "[saʊnd]",
+    "learned": false,
+    "page": 57
+  },
+  {
+    "id": 427,
+    "word": "sound (verb)",
+    "translation": "klingen; sich (gut usw.) anhören",
+    "translationRu": "звучать",
+    "transcription": "[saʊnd]",
+    "learned": false,
+    "page": 57
+  },
+  {
+    "id": 428,
+    "word": "rhyme with sth.",
+    "translation": "sich mit etwas reimen",
+    "translationRu": "рифмоваться с чем-то",
+    "transcription": "[raɪm]",
+    "learned": false,
+    "page": 57
+  },
+  {
+    "id": 429,
+    "word": "group",
+    "translation": "die Gruppe",
+    "translationRu": "группа",
+    "transcription": "[ɡruːp]",
+    "learned": false,
+    "page": 57
+  },
+  {
+    "id": 430,
+    "word": "into the room",
+    "translation": "ins Zimmer (hinein)",
+    "translationRu": "в комнату (внутрь)",
+    "transcription": "[ˈɪntə ðə ruːm]",
+    "learned": false,
+    "page": 57
+  },
+  {
+    "id": 431,
+    "word": "out of ...",
+    "translation": "aus … (heraus/hinaus)",
+    "translationRu": "из … (наружу)",
+    "transcription": "[ˈaʊt əv]",
+    "learned": false,
+    "page": 57
+  },
+  {
+    "id": 432,
+    "word": "sit down",
+    "translation": "sich hinsetzen",
+    "translationRu": "садиться",
+    "transcription": "[sɪt ˈdaʊn]",
+    "learned": false,
+    "page": 57
+  },
+  {
+    "id": 433,
+    "word": "find sth. out",
+    "translation": "etwas herausfinden",
+    "translationRu": "выяснить что-то",
+    "transcription": "[faɪnd ˈaʊt]",
+    "learned": false,
+    "page": 57
+  },
+  {
+    "id": 434,
+    "word": "clever",
+    "translation": "klug, schlau",
+    "translationRu": "умный, сообразительный",
+    "transcription": "[ˈklevə]",
+    "learned": false,
+    "page": 57
+  },
+  {
+    "id": 435,
+    "word": "man (pl men)",
+    "translation": "der Mann (pl: men)",
+    "translationRu": "мужчина (мн. men)",
+    "transcription": "[mæn], [men]",
+    "learned": false,
+    "page": 57
+  },
+  {
+    "id": 436,
+    "word": "woman (pl women)",
+    "translation": "die Frau (pl: women)",
+    "translationRu": "женщина (мн. women)",
+    "transcription": "[ˈwʊmən], [ˈwɪmɪn]",
+    "learned": false,
+    "page": 57
+  },
+  {
+    "id": 437,
+    "word": "routine",
+    "translation": "die Routine",
+    "translationRu": "рутина",
+    "transcription": "[ruːˈtiːn]",
+    "learned": false,
+    "page": 57
+  },
+  {
+    "id": 438,
+    "word": "exact",
+    "translation": "genau",
+    "translationRu": "точный",
+    "transcription": "[ɪɡˈzækt]",
+    "learned": false,
+    "page": 58
+  },
+  {
+    "id": 439,
+    "word": "evening",
+    "translation": "der Abend",
+    "translationRu": "вечер",
+    "transcription": "[ˈiːvnɪŋ]",
+    "learned": false,
+    "page": 58
+  },
+  {
+    "id": 440,
+    "word": "exact",
+    "translation": "genau",
+    "translationRu": "точный",
+    "transcription": "[ɪɡˈzækt]",
+    "learned": false,
+    "page": 58
+  },
+  {
+    "id": 441,
+    "word": "evening",
+    "translation": "der Abend",
+    "translationRu": "вечер",
+    "transcription": "[ˈiːvnɪŋ]",
+    "learned": false,
+    "page": 58
+  },
+  {
+    "id": 442,
+    "word": "midnight",
+    "translation": "Mitternacht",
+    "translationRu": "полночь",
+    "transcription": "[ˈmɪdnaɪt]",
+    "learned": false,
+    "page": 58
+  },
+  {
+    "id": 443,
+    "word": "midday",
+    "translation": "der Mittag, mittags",
+    "translationRu": "полдень",
+    "transcription": "[ˈmɪddeɪ]",
+    "learned": false,
+    "page": 58
+  },
+  {
+    "id": 444,
+    "word": "quarter past ten",
+    "translation": "Viertel nach zehn (10:15/22:15)",
+    "translationRu": "четверть одиннадцатого (10:15/22:15)",
+    "transcription": "[ˈkwɔːtə pɑːst]",
+    "learned": false,
+    "page": 58
+  },
+  {
+    "id": 445,
+    "word": "quarter to eleven",
+    "translation": "Viertel vor elf (10:45/22:45)",
+    "translationRu": "без четверти одиннадцать (10:45/22:45)",
+    "transcription": "[ˈkwɔːtə tuː]",
+    "learned": false,
+    "page": 58
+  },
+  {
+    "id": 446,
+    "word": "exact",
+    "translation": "genau",
+    "translationRu": "точный",
+    "transcription": "[ɪɡˈzækt]",
+    "learned": false,
+    "page": 58
+  },
+  {
+    "id": 447,
+    "word": "evening",
+    "translation": "der Abend",
+    "translationRu": "вечер",
+    "transcription": "[ˈiːvnɪŋ]",
+    "learned": false,
+    "page": 58
+  },
+  {
+    "id": 448,
+    "word": "midnight",
+    "translation": "Mitternacht",
+    "translationRu": "полночь",
+    "transcription": "[ˈmɪdnaɪt]",
+    "learned": false,
+    "page": 58
+  },
+  {
+    "id": 449,
+    "word": "midday",
+    "translation": "der Mittag, mittags",
+    "translationRu": "полдень",
+    "transcription": "[ˈmɪddeɪ]",
+    "learned": false,
+    "page": 58
+  },
+  {
+    "id": 450,
+    "word": "quarter past ten",
+    "translation": "Viertel nach zehn (10:15/22:15)",
+    "translationRu": "четверть одиннадцатого (10:15/22:15)",
+    "transcription": "[ˈkwɔːtə pɑːst]",
+    "learned": false,
+    "page": 58
+  },
+  {
+    "id": 451,
+    "word": "quarter to eleven",
+    "translation": "Viertel vor elf (10:45/22:45)",
+    "translationRu": "без четверти одиннадцать (10:45/22:45)",
+    "transcription": "[ˈkwɔːtə tuː]",
+    "learned": false,
+    "page": 58
+  },
+  {
+    "id": 452,
+    "word": "without",
+    "translation": "ohne",
+    "translationRu": "без",
+    "transcription": "[wɪˈðaʊt]",
+    "learned": false,
+    "page": 60
+  },
+  {
+    "id": 453,
+    "word": "try",
+    "translation": "(aus)probieren; versuchen",
+    "translationRu": "пробовать, пытаться",
+    "transcription": "[traɪ]",
+    "learned": false,
+    "page": 60
+  },
+  {
+    "id": 454,
+    "word": "page",
+    "translation": "die Seite",
+    "translationRu": "страница",
+    "transcription": "[peɪdʒ]",
+    "learned": false,
+    "page": 60
+  },
+  {
+    "id": 455,
+    "word": "context",
+    "translation": "der (Text-, Satz-)Zusammenhang, der Kontext",
+    "translationRu": "контекст",
+    "transcription": "[ˈkɒntekst]",
+    "learned": false,
+    "page": 60
+  },
+  {
+    "id": 456,
+    "word": "Excuse me",
+    "translation": "Entschuldigung / Entschuldigen Sie",
+    "translationRu": "Извините, простите",
+    "transcription": "[ɪkˈskjuːz miː]",
+    "learned": false,
+    "page": 62
+  },
+  {
+    "id": 457,
+    "word": "next week",
+    "translation": "nächste Woche",
+    "translationRu": "на следующей неделе",
+    "transcription": "[nekst]",
+    "learned": false,
+    "page": 62
+  },
+  {
+    "id": 458,
+    "word": "these",
+    "translation": "diese …, die … (hier)",
+    "translationRu": "эти",
+    "transcription": "[ðiːz]",
+    "learned": false,
+    "page": 62
+  },
+  {
+    "id": 459,
+    "word": "classmate",
+    "translation": "Mitschüler/in, Klassenkamerad/in",
+    "translationRu": "одноклассник, одноклассница",
+    "transcription": "[ˈklɑːsmeɪt]",
+    "learned": false,
+    "page": 62
+  },
+  {
+    "id": 460,
+    "word": "a kind of",
+    "translation": "eine Art (von …)",
+    "translationRu": "вид, разновидность",
+    "transcription": "[ə kaɪnd]",
+    "learned": false,
+    "page": 62
+  },
+  {
+    "id": 461,
+    "word": "fact",
+    "translation": "die Tatsache, der Fakt",
+    "translationRu": "факт",
+    "transcription": "[fækt]",
+    "learned": false,
+    "page": 62
+  },
+  {
+    "id": 462,
+    "word": "clear",
+    "translation": "klar, deutlich",
+    "translationRu": "ясный, понятный",
+    "transcription": "[klɪə]",
+    "learned": false,
+    "page": 62
+  },
+  {
+    "id": 463,
+    "word": "guess",
+    "translation": "raten, erraten",
+    "translationRu": "угадывать",
+    "transcription": "[ɡes]",
+    "learned": false,
+    "page": 62
+  },
+  {
+    "id": 464,
+    "word": "different (from)",
+    "translation": "verschieden; anders (als)",
+    "translationRu": "отличающийся от",
+    "transcription": "[ˈdɪfrənt]",
+    "learned": false,
+    "page": 62
+  },
+  {
+    "id": 465,
+    "word": "second",
+    "translation": "zweite(r, s)",
+    "translationRu": "второй",
+    "transcription": "[ˈsekənd]",
+    "learned": false,
+    "page": 62
+  },
+  {
+    "id": 466,
+    "word": "apple",
+    "translation": "der Apfel",
+    "translationRu": "яблоко",
+    "transcription": "[ˈæpl]",
+    "learned": false,
+    "page": 62
+  },
+  {
+    "id": 467,
+    "word": "café",
+    "translation": "das Café",
+    "translationRu": "кафе",
+    "transcription": "[ˈkæfeɪ]",
+    "learned": false,
+    "page": 62
+  },
+  {
+    "id": 468,
+    "word": "shout",
+    "translation": "schreien, rufen",
+    "translationRu": "кричать",
+    "transcription": "[ʃaʊt]",
+    "learned": false,
+    "page": 62
+  },
+  {
+    "id": 469,
+    "word": "put your hand up",
+    "translation": "sich melden",
+    "translationRu": "поднять руку",
+    "transcription": "[pʊt]",
+    "learned": false,
+    "page": 62
+  },
+  {
+    "id": 470,
+    "word": "Which sentence?",
+    "translation": "Welcher Satz?",
+    "translationRu": "Какое предложение?",
+    "transcription": "[wɪtʃ]",
+    "learned": false,
+    "page": 62
+  },
+  {
+    "id": 471,
+    "word": "get up",
+    "translation": "aufstehen",
+    "translationRu": "вставать, просыпаться",
+    "transcription": "[ˈɡet ˌʌp]",
+    "learned": false,
+    "page": 63
+  },
+  {
+    "id": 472,
+    "word": "hurt",
+    "translation": "verletzen",
+    "translationRu": "ранить, причинять боль",
+    "transcription": "[hɜːt]",
+    "learned": false,
+    "page": 63
+  },
+  {
+    "id": 473,
+    "word": "them",
+    "translation": "sie; ihnen",
+    "translationRu": "их, им",
+    "transcription": "[ðem], [ðəm]",
+    "learned": false,
+    "page": 63
+  },
+  {
+    "id": 474,
+    "word": "activity",
+    "translation": "die Aktivität",
+    "translationRu": "деятельность, занятие, активность",
+    "transcription": "[ækˈtɪvəti]",
+    "learned": false,
+    "page": 64
+  },
+  {
+    "id": 475,
+    "word": "percent",
+    "translation": "das Prozent",
+    "translationRu": "процент",
+    "transcription": "[pəˈsent]",
+    "learned": false,
+    "page": 66
+  },
+  {
+    "id": 476,
+    "word": "full",
+    "translation": "voll",
+    "translationRu": "полный",
+    "transcription": "[fʊl]",
+    "learned": false,
+    "page": 66
+  },
+  {
+    "id": 477,
+    "word": "part",
+    "translation": "der Teil",
+    "translationRu": "часть",
+    "transcription": "[pɑːt]",
+    "learned": false,
+    "page": 66
+  },
+  {
+    "id": 478,
+    "word": "against",
+    "translation": "gegen",
+    "translationRu": "против",
+    "transcription": "[əˈɡenst]",
+    "learned": false,
+    "page": 66
+  },
+  {
+    "id": 479,
+    "word": "buy",
+    "translation": "kaufen",
+    "translationRu": "покупать",
+    "transcription": "[baɪ]",
+    "learned": false,
+    "page": 66
+  },
+  {
+    "id": 480,
+    "word": "give",
+    "translation": "geben",
+    "translationRu": "давать",
+    "transcription": "[ɡɪv]",
+    "learned": false,
+    "page": 66
+  },
+  {
+    "id": 481,
+    "word": "information",
+    "translation": "die Information(en) (über)",
+    "translationRu": "информация (о)",
+    "transcription": "[ˌɪnfəˈmeɪʃn]",
+    "learned": false,
+    "page": 66
+  },
+  {
+    "id": 482,
+    "word": "concert",
+    "translation": "das Konzert",
+    "translationRu": "концерт",
+    "transcription": "[ˈkɒnsət]",
+    "learned": false,
+    "page": 66
+  },
+  {
+    "id": 483,
+    "word": "exam",
+    "translation": "die Prüfung",
+    "translationRu": "экзамен, проверочная работа",
+    "transcription": "[ɪɡˈzæm]",
+    "learned": false,
+    "page": 66
+  },
+  {
+    "id": 484,
+    "word": "loud",
+    "translation": "laut",
+    "translationRu": "громкий",
+    "transcription": "[laʊd]",
+    "learned": false,
+    "page": 66
+  },
+  {
+    "id": 485,
+    "word": "I'm finished",
+    "translation": "Ich bin fertig",
+    "translationRu": "я закончил, я готов",
+    "transcription": "[ˈfɪnɪʃt]",
+    "learned": false,
+    "page": 67
+  },
+  {
+    "id": 486,
+    "word": "polite",
+    "translation": "höflich",
+    "translationRu": "вежливый",
+    "transcription": "[pəˈlaɪt]",
+    "learned": false,
+    "page": 67
+  },
+  {
+    "id": 487,
+    "word": "scene",
+    "translation": "die Szene",
+    "translationRu": "сцена",
+    "transcription": "[siːn]",
+    "learned": false,
+    "page": 67
+  },
+  {
+    "id": 488,
+    "word": "salad",
+    "translation": "der Salat",
+    "translationRu": "салат",
+    "transcription": "[ˈsæləd]",
+    "learned": false,
+    "page": 68
+  },
+  {
+    "id": 489,
+    "word": "those",
+    "translation": "die ...; dort; jene ...",
+    "translationRu": "те",
+    "transcription": "[ðəʊz]",
+    "learned": false,
+    "page": 68
+  },
+  {
+    "id": 490,
+    "word": "over",
+    "translation": "über",
+    "translationRu": "над, через",
+    "transcription": "[ˈəʊvə]",
+    "learned": false,
+    "page": 68
+  },
+  {
+    "id": 491,
+    "word": "over there",
+    "translation": "da drüben, dort drüben",
+    "translationRu": "вон там",
+    "transcription": "[ˈəʊvə ðeə]",
+    "learned": false,
+    "page": 68
+  },
+  {
+    "id": 492,
+    "word": "huge",
+    "translation": "riesig",
+    "translationRu": "огромный",
+    "transcription": "[hjuːdʒ]",
+    "learned": false,
+    "page": 68
+  },
+  {
+    "id": 493,
+    "word": "cook",
+    "translation": "der Koch, die Köchin",
+    "translationRu": "повар",
+    "transcription": "[kʊk]",
+    "learned": false,
+    "page": 68
+  },
+  {
+    "id": 494,
+    "word": "him",
+    "translation": "ihn; ihm",
+    "translationRu": "его; ему",
+    "transcription": "[hɪm]",
+    "learned": false,
+    "page": 68
+  },
+  {
+    "id": 495,
+    "word": "exciting",
+    "translation": "aufregend, spannend",
+    "translationRu": "захватывающий",
+    "transcription": "[ɪkˈsaɪtɪŋ]",
+    "learned": false,
+    "page": 68
+  },
+  {
+    "id": 496,
+    "word": "to beam",
+    "translation": "projizieren",
+    "translationRu": "излучать, светиться; транслировать",
+    "transcription": "[biːm]",
+    "learned": false,
+    "page": 68
+  },
+  {
+    "id": 497,
+    "word": "when?",
+    "translation": "wann?",
+    "translationRu": "когда?",
+    "transcription": "[wen]",
+    "learned": false,
+    "page": 69
+  },
+  {
+    "id": 498,
+    "word": "creepy",
+    "translation": "gruselig",
+    "translationRu": "жуткий",
+    "transcription": "[ˈkriːpi]",
+    "learned": false,
+    "page": 68
+  },
+  {
+    "id": 499,
+    "word": "weekend",
+    "translation": "das Wochenende",
+    "translationRu": "выходные",
+    "transcription": "[ˈwiːkˌend]",
+    "learned": false,
+    "page": 68
+  },
+  {
+    "id": 500,
+    "word": "ice cream",
+    "translation": "das (Speise-)Eis",
+    "translationRu": "мороженое",
+    "transcription": "[aɪs kriːm]",
+    "learned": false,
+    "page": 68
+  },
+  {
+    "id": 501,
+    "word": "little",
+    "translation": "klein",
+    "translationRu": "маленький",
+    "transcription": "[ˈlɪtl]",
+    "learned": false,
+    "page": 68
+  },
+  {
+    "id": 502,
+    "word": "baby",
+    "translation": "das Baby",
+    "translationRu": "младенец",
+    "transcription": "[ˈbeɪbi]",
+    "learned": false,
+    "page": 68
+  },
+  {
+    "id": 503,
+    "word": "calendar",
+    "translation": "der Kalender",
+    "translationRu": "календарь",
+    "transcription": "[ˈkælɪndə]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 504,
+    "word": "month",
+    "translation": "der Monat",
+    "translationRu": "месяц",
+    "transcription": "[mʌnθ]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 505,
+    "word": "winter",
+    "translation": "Winter",
+    "translationRu": "зима",
+    "transcription": "[ˈwɪntə]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 506,
+    "word": "spring",
+    "translation": "Frühling",
+    "translationRu": "весна",
+    "transcription": "[sprɪŋ]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 507,
+    "word": "autumn",
+    "translation": "Herbst",
+    "translationRu": "осень",
+    "transcription": "[ˈɔːtəm]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 508,
+    "word": "summer",
+    "translation": "Sommer",
+    "translationRu": "лето",
+    "transcription": "[ˈsʌmə]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 509,
+    "word": "January",
+    "translation": "Januar",
+    "translationRu": "январь",
+    "transcription": "[ˈdʒænjʊəri]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 510,
+    "word": "February",
+    "translation": "Februar",
+    "translationRu": "февраль",
+    "transcription": "[ˈfebruəri]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 511,
+    "word": "March",
+    "translation": "März",
+    "translationRu": "март",
+    "transcription": "[mɑːtʃ]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 512,
+    "word": "April",
+    "translation": "April",
+    "translationRu": "апрель",
+    "transcription": "[ˈeɪprəl]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 513,
+    "word": "May",
+    "translation": "Mai",
+    "translationRu": "май",
+    "transcription": "[meɪ]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 514,
+    "word": "June",
+    "translation": "Juni",
+    "translationRu": "июнь",
+    "transcription": "[dʒuːn]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 515,
+    "word": "July",
+    "translation": "Juli",
+    "translationRu": "июль",
+    "transcription": "[dʒuːˈlaɪ]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 516,
+    "word": "August",
+    "translation": "August",
+    "translationRu": "август",
+    "transcription": "[ˈɔːɡəst]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 517,
+    "word": "September",
+    "translation": "September",
+    "translationRu": "сентябрь",
+    "transcription": "[sepˈtembə]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 518,
+    "word": "October",
+    "translation": "Oktober",
+    "translationRu": "октябрь",
+    "transcription": "[ɒkˈtəʊbə]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 519,
+    "word": "November",
+    "translation": "November",
+    "translationRu": "ноябрь",
+    "transcription": "[nəʊˈvembə]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 520,
+    "word": "December",
+    "translation": "Dezember",
+    "translationRu": "декабрь",
+    "transcription": "[dɪˈsembə]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 521,
+    "word": "term",
+    "translation": "das Trimester",
+    "translationRu": "триместр",
+    "transcription": "[tɜːm]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 522,
+    "word": "date",
+    "translation": "das Datum",
+    "translationRu": "дата",
+    "transcription": "[deɪt]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 523,
+    "word": "event",
+    "translation": "das Ereignis",
+    "translationRu": "событие",
+    "transcription": "[ɪˈvent]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 524,
+    "word": "holidays",
+    "translation": "Ferien (pl)",
+    "translationRu": "каникулы",
+    "transcription": "[ˈhɒlɪdeɪz]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 525,
+    "word": "end",
+    "translation": "das Ende, der Schluss",
+    "translationRu": "конец",
+    "transcription": "[end]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 526,
+    "word": "fourth",
+    "translation": "vierte(r, s)",
+    "translationRu": "четвёртый",
+    "transcription": "[fɔːθ]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 527,
+    "word": "fifth",
+    "translation": "fünfte(r, s)",
+    "translationRu": "пятый",
+    "transcription": "[fɪfθ]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 528,
+    "word": "fifth",
+    "translation": "fünfte(r, s)",
+    "translationRu": "пятый",
+    "transcription": "[fɪfθ]",
+    "learned": false,
+    "page": 70
+  },
+  {
+    "id": 529,
+    "word": "happen (to)",
+    "translation": "geschehen, passieren (mit)",
+    "translationRu": "случаться, происходить (с)",
+    "transcription": "[ˈhæpən]",
+    "learned": false,
+    "page": 71
+  },
+  {
+    "id": 530,
+    "word": "interesting",
+    "translation": "interessant",
+    "translationRu": "интересный",
+    "transcription": "[ˈɪntrəstɪŋ]",
+    "learned": false,
+    "page": 72
+  },
+  {
+    "id": 531,
+    "word": "schoolbook",
+    "translation": "das Schulbuch",
+    "translationRu": "школьный учебник",
+    "transcription": "[ˈskuːlbʊk]",
+    "learned": false,
+    "page": 72
+  },
+  {
+    "id": 532,
+    "word": "Come on!",
+    "translation": "Na los! / Komm!",
+    "translationRu": "Ну давай! / Пойдём!",
+    "transcription": "[ˈkʌm ɒn]",
+    "learned": false,
+    "page": 73
+  },
+  {
+    "id": 533,
+    "word": "crib sheet",
+    "translation": "der Spickzettel, der Merkzettel",
+    "translationRu": "шпаргалка, памятка",
+    "transcription": "[ˈkrɪb ʃiːt]",
+    "learned": false,
+    "page": 74
+  },
+  {
+    "id": 534,
+    "word": "note",
+    "translation": "die Notiz, die Mitteilung",
+    "translationRu": "записка, сообщение",
+    "transcription": "[nəʊt]",
+    "learned": false,
+    "page": 74
+  },
+  {
+    "id": 535,
+    "word": "breathe in",
+    "translation": "einatmen",
+    "translationRu": "вдыхать",
+    "transcription": "[briːð ɪn]",
+    "learned": false,
+    "page": 75
+  },
+  {
+    "id": 536,
+    "word": "relax",
+    "translation": "sich entspannen, sich ausruhen",
+    "translationRu": "расслабляться, отдыхать",
+    "transcription": "[rɪˈlæks]",
+    "learned": false,
+    "page": 75
+  },
+  {
+    "id": 537,
+    "word": "smile",
+    "translation": "lächeln",
+    "translationRu": "улыбаться",
+    "transcription": "[smaɪl]",
+    "learned": false,
+    "page": 75
+  },
+  {
+    "id": 538,
+    "word": "slow",
+    "translation": "langsam",
+    "translationRu": "медленный",
+    "transcription": "[sləʊ]",
+    "learned": false,
+    "page": 75
+  },
+  {
+    "id": 539,
+    "word": "fast",
+    "translation": "schnell",
+    "translationRu": "быстрый",
+    "transcription": "[fɑːst]",
+    "learned": false,
+    "page": 75
+  },
+  {
+    "id": 540,
+    "word": "in a clear voice",
+    "translation": "mit klarer Stimme",
+    "translationRu": "ясным голосом",
+    "transcription": "[vɔɪs]",
+    "learned": false,
+    "page": 75
+  },
+  {
+    "id": 541,
+    "word": "worry (about)",
+    "translation": "sich Sorgen machen (wegen, um)",
+    "translationRu": "волноваться, беспокоиться (о)",
+    "transcription": "[ˈwʌri]",
+    "learned": false,
+    "page": 75
+  },
+  {
+    "id": 542,
+    "word": "audience",
+    "translation": "das Publikum; Zuschauer/innen; Zuhörer/innen",
+    "translationRu": "публика, зрители, аудитория",
+    "transcription": "[ˈɔːdiəns]",
+    "learned": false,
+    "page": 75
+  },
+  {
+    "id": 543,
+    "word": "technique",
+    "translation": "die Technik, die Methode",
+    "translationRu": "техника, метод",
+    "transcription": "[tekˈniːk]",
+    "learned": false,
+    "page": 75
+  },
+  {
+    "id": 544,
+    "word": "while",
+    "translation": "während",
+    "translationRu": "пока; в то время как",
+    "transcription": "[waɪl]",
+    "learned": false,
+    "page": 75
+  },
+  {
+    "id": 545,
+    "word": "repeat",
+    "translation": "wiederholen",
+    "translationRu": "повторять",
+    "transcription": "[rɪˈpiːt]",
+    "learned": false,
+    "page": 75
+  },
+  {
+    "id": 546,
+    "word": "tired",
+    "translation": "müde",
+    "translationRu": "уставший",
+    "transcription": "[ˈtaɪəd]",
+    "learned": false,
+    "page": 78
+  },
+  {
+    "id": 547,
+    "word": "stop",
+    "translation": "aufhören; anhalten",
+    "translationRu": "останавливаться; прекращать",
+    "transcription": "[stɒp]",
+    "learned": false,
+    "page": 78
+  },
+  {
+    "id": 548,
+    "word": "dancer",
+    "translation": "Tänzer/in",
+    "translationRu": "танцор / танцовщица",
+    "transcription": "[ˈdɑːnsə]",
+    "learned": false,
+    "page": 78
+  },
+  {
+    "id": 549,
+    "word": "just then",
+    "translation": "genau in dem Moment; gerade dann",
+    "translationRu": "как раз в этот момент; только что",
+    "transcription": "[dʒʌst ðen]",
+    "learned": false,
+    "page": 78
+  },
+  {
+    "id": 550,
+    "word": "beep",
+    "translation": "piepen",
+    "translationRu": "пищать (издавать сигнал)",
+    "transcription": "[biːp]",
+    "learned": false,
+    "page": 78
+  },
+  {
+    "id": 551,
+    "word": "shy",
+    "translation": "schüchtern, scheu",
+    "translationRu": "застенчивый, робкий",
+    "transcription": "[ʃaɪ]",
+    "learned": false,
+    "page": 78
+  },
+  {
+    "id": 552,
+    "word": "It isn’t even real.",
+    "translation": "Es ist (noch) nicht einmal echt.",
+    "translationRu": "Это даже не настоящее.",
+    "transcription": "[ˈiːvən]",
+    "learned": false,
+    "page": 79
+  },
+  {
+    "id": 553,
+    "word": "real",
+    "translation": "echt, wirklich",
+    "translationRu": "настоящий, реальный",
+    "transcription": "[ˈrɪəl]",
+    "learned": false,
+    "page": 79
+  }
+]
+  

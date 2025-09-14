@@ -1,0 +1,272 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  background-image: url('/forest-light.jpeg');
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  font-family: 'Patrick Hand', sans-serif;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+
+
+
+
+.read-the-docs {
+  color: #888;
+}
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+/* --- UPDATED .card --- */
+.card.wide-block {
+  width: 100%;
+  max-width: 320px;
+  height: 120px;
+  border: 1px solid #ddd;
+  border-radius: 14px;
+  padding: 0;
+  cursor: pointer;
+  background-color: #f3fbe9;
+  transition: box-shadow 0.3s ease, background-color 0.3s ease;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+  font-family: 'Patrick Hand';
+  perspective: 1000px;
+  position: relative;
+  display: flex;
+  align-items: stretch;
+}
+.card.learned {
+  opacity: 0.5;
+}
+
+.card:hover {
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+  background-color: #fdfdfd;
+}
+
+.card strong {
+  font-size: 1.4rem;
+  color: #444;
+  text-shadow: 1px 1px 3px rgba(255, 220, 240, 0.8);
+  font-family: 'Patrick Hand', sans-serif;
+  font-style: normal;
+}
+
+/* --- UPDATED .card-inner --- */
+.card-inner {
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.filters {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.filters label {
+  font-size: 0.95rem;
+  background-color: #f4f4f4;
+  padding: 6px 12px;
+  border-radius: 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.filters input[type="radio"] {
+  display: none;
+}
+
+.filters input[type="radio"]:checked + span {
+  background-color: #d0eaff;
+  font-weight: bold;
+}
+
+.filters span {
+  display: inline-block;
+}
+
+.hint {
+  margin-top: 16px;
+  font-size: 1rem;
+  color: #555;
+  text-align: center;
+}
+
+.card.flipped .card-inner {
+  transform: rotateY(180deg);
+}
+
+.card-front,
+.card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  min-height: 100%;
+  backface-visibility: hidden;
+  border-radius: 14px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.08);
+  background-color: #f3fbe9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.card-front {
+  background-color: #f3fbe9;
+  position: relative;
+}
+
+.card-back {
+  background-color: #f3fbe9;
+  transform: rotateY(180deg);
+}
+
+.card-back div:first-child {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #3b3b3b;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.6);
+  font-family: 'Patrick Hand';
+}
+
+.card-back div:last-child {
+  font-size: 1.3rem;
+  font-weight: 500;
+  color: #7755aa;
+  font-family: 'Patrick Hand', sans-serif;
+  font-style: normal;
+  text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.7);
+  opacity: 0.95;
+  margin-top: 6px;
+}
+h1.wide-block {
+  font-family: 'Patrick Hand', sans-serif;
+  font-size: 2.4rem;
+  color: #2e4a1c;
+  text-shadow: 1px 1px 2px rgba(255, 255, 255, 0.7);
+  margin-bottom: 1.5rem;
+  background: linear-gradient(to right, #e6f4d6, #f9fbe7);
+  padding: 10px 24px;
+  border-radius: 20px;
+  display: block;
+  box-shadow: 0 4px 10px rgba(34, 139, 34, 0.2);
+}
+
+
+.input-styled,
+.wide-block {
+  font-family: 'Patrick Hand', sans-serif;
+  font-size: 1.1rem;
+  padding: 10px 14px;
+  border-radius: 12px;
+  border: 2px solid #a4d37f;
+  background-color: #f3fbe9;
+  box-shadow: 0 2px 6px rgba(164, 211, 127, 0.25);
+  color: #2e4a1c;
+  margin-bottom: 12px;
+
+}
+
+.star-icon {
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.wide-block {
+  max-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+ .add-button {
+   all: unset;
+   font-family: 'Patrick Hand', sans-serif;
+   font-size: 1.1rem;
+   color: #2e4a1c;
+   text-align: center;
+   display: inline-block;
+   padding: 10px 14px;
+   border-radius: 12px;
+   margin-bottom: 12px;
+   cursor: pointer;
+   color: #2e4a1c !important;
+   background-color: #f3fbe9 !important;
+   -webkit-appearance: none;
+ }
+
+button.add-button::-moz-focus-inner {
+  border: 0;
+}
+
+button.add-button:focus {
+  outline: none;
+  box-shadow: none;
+}
+
+.draggable-card-wrapper {
+  width: 100%;
+  max-width: 320px;
+}
+
+/* Desktop-only focus reset for the page selector */
+@media (pointer: fine) {
+  .page-select,
+  .page-select:hover,
+  .page-select:focus,
+  .page-select:focus-visible {
+    border: none !important;
+    box-shadow: none !important;
+    outline: none !important;
+  }
+
+  /* Custom accessible focus ring for desktop */
+  .page-select:focus-visible {
+    box-shadow: 0 0 0 3px rgba(164, 211, 127, 0.6) !important;
+    border-radius: 12px;
+  }
+}
+
+/* Improve mobile/iOS behavior of the native select */
+.page-select {
+  -webkit-appearance: auto;
+  appearance: auto;
+  background-color: #f3fbe9;
+  cursor: pointer;
+  position: relative;
+  z-index: 1001; /* keep above any card layers */
+  touch-action: manipulation;
+  pointer-events: auto;
+  min-height: 44px; /* comfortable touch target */
+  line-height: 1.2;
+}
