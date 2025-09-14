@@ -1,12 +1,11 @@
-import './App.css'
-import LearningWords from "./LearningWords";
+import './App.css';
+import Quiz from './Quiz';
 
-function App() {
+export default function App() {
   return (
     <div>
-      <LearningWords />
+      <h1>Lia Quiz</h1>
+         <Quiz />
     </div>
   );
 }
-
-export default App;
