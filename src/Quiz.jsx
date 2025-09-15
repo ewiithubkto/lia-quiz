@@ -1,4 +1,4 @@
-import { useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import kidsWords from "./data/kidsWords.json";
 
 // ——— берём твою идею нормализации, но короче ———
@@ -67,15 +67,16 @@ function buildQuestions(entries, page, mode) {
     : ((mode === 'en->de') ? entries.filter(isValidEnDe) : entries.filter(isValidDeEn));
 
   const questions = [];
+  const sourceVals = (mode === 'en->de')
+    ? poolOptions.map(e => e.translation.trim())
+    : poolOptions.map(e => e.word.trim());
   for (const q of poolQuestions) {
     if (mode === 'en->de') {
       const correct = q.translation.trim();
-      const sourceVals = poolOptions.map(e => e.translation.trim());
       const options = buildOptions(correct, sourceVals, 4);
       if (options.length) questions.push({ id: q.id, prompt: q.word, correct, options, show: 'de' });
     } else {
       const correct = q.word.trim();
-      const sourceVals = poolOptions.map(e => e.word.trim());
       const options = buildOptions(correct, sourceVals, 4);
       if (options.length) questions.push({ id: q.id, prompt: q.translation || '', correct, options, show: 'en' });
     }
@@ -148,9 +149,23 @@ export default function Quiz() {
   const [score, setScore] = useState(0);
   const [error, setError] = useState("");
   const [locked, setLocked] = useState(false);
+  const lockRef = useRef(false);
   const [chosen, setChosen] = useState(null); // выбранный вариант
   const [wasCorrect, setWasCorrect] = useState(null); // true/false/null
   const current = questions[idx];
+
+  // Подгрузка голосов для стабильной озвучки EN (без DE)
+  useEffect(() => {
+    if (typeof window === 'undefined' || !window.speechSynthesis) return;
+    // Тригернём загрузку голосов и подпишемся на событие для будущих вызовов
+    try { window.speechSynthesis.getVoices(); } catch {}
+    const handler = () => {
+      // Ничего не делаем напрямую — просто держим событие подписанным,
+      // чтобы голоса были готовы к моменту вызова speakText.
+    };
+    window.speechSynthesis.addEventListener('voiceschanged', handler);
+    return () => window.speechSynthesis.removeEventListener('voiceschanged', handler);
+  }, []);
 
   function startQuiz() {
     setError("");
@@ -165,14 +180,19 @@ export default function Quiz() {
     setQuestions(qs);
     setIdx(0);
     setScore(0);
+    setChosen(null);
+    setWasCorrect(null);
+    setLocked(false);
+    lockRef.current = false;
     setStarted(true);
   }
   function answer(opt) {
-    if (!current || locked) return;
+    if (!current || locked || lockRef.current) return;
     const correct = opt === current.correct;
     setChosen(opt);
     setWasCorrect(correct);
     setLocked(true);
+    lockRef.current = true;
     if (correct) setScore((s) => s + 1);
 
     setTimeout(() => {
@@ -184,6 +204,7 @@ export default function Quiz() {
       setChosen(null);
       setWasCorrect(null);
       setLocked(false);
+      lockRef.current = false;
     }, 650);
   }
 
@@ -195,10 +216,10 @@ export default function Quiz() {
       {/* Настройки перед стартом */}
       {!started && (
         <>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 12, marginTop: 12 }}>
+          <div className="settings-grid">
             <div>
               <label style={{ fontWeight: 600 }}>Seite</label>
-              <select value={page} onChange={(e) => setPage(e.target.value)} style={{ width: "100%", padding: 8 }}>
+              <select value={page} onChange={(e) => setPage(e.target.value)} className="input-styled page-select">
                 <option value="all">Alle Seiten</option>
                 {pages.map((p) => (
                   <option key={p} value={p}>{`p.${p}`}</option>
@@ -207,7 +228,7 @@ export default function Quiz() {
             </div>
             <div>
               <label style={{ fontWeight: 600 }}>Modus</label>
-              <select value={mode} onChange={(e) => setMode(e.target.value)} style={{ width: "100%", padding: 8 }}>
+              <select value={mode} onChange={(e) => setMode(e.target.value)} className="input-styled page-select">
                 <option value="en->de">EN → DE</option>
                 <option value="de->en">DE → EN</option>
               </select>
@@ -255,7 +276,9 @@ export default function Quiz() {
             }}
           >
             <span
+              onMouseDown={(e) => e.preventDefault()}
               onClick={() => { if (mode === 'en->de') speakText(current.prompt, 'en'); }}
+              className="tappable"
               style={{ cursor: mode === 'en->de' ? 'pointer' : 'default' }}
               title={mode === 'en->de' ? 'Zum Anhören tippen' : undefined}
             >
@@ -279,24 +302,21 @@ export default function Quiz() {
               </button>
             )}
           </div>
-          <div style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
-            {current.options.map((opt) => (
-              <button
-                key={opt}
-                onClick={() => answer(opt)}
-                className="input-styled"
-                disabled={locked}
-                style={{
-                  padding: "12px 12px",
-                  border: chosen === opt ? (wasCorrect ? '2px solid #4caf50' : '2px solid #e53935') : undefined,
-                  background: chosen === opt ? (wasCorrect ? '#e8f5e9' : '#ffebee') : undefined,
-                  transition: 'transform 160ms ease, background 160ms ease, border 160ms ease',
-                  opacity: locked && chosen !== opt ? 0.75 : 1
-                }}
-              >
-                {opt}
-              </button>
-            ))}
+          <div className="answer-grid" aria-busy={locked ? 'true' : 'false'} style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+            {current.options.map((opt) => {
+              const isSelected = chosen === opt;
+              const stateClass = isSelected ? (wasCorrect ? 'is-correct' : 'is-wrong') : '';
+              return (
+                <button
+                  key={opt}
+                  onClick={() => answer(opt)}
+                  className={`input-styled answer-btn ${isSelected ? 'is-selected' : ''} ${stateClass}`}
+                  disabled={locked}
+                >
+                  {opt}
+                </button>
+              );
+            })}
           </div>
         </>
       )}
@@ -312,7 +332,7 @@ export default function Quiz() {
               </div>
               <div style={{ display: "flex", gap: 8, justifyContent: "flex-end", marginTop: 12 }}>
                 <button onClick={startQuiz} className="input-styled">Noch einmal</button>
-                <button onClick={() => { setQuestions([]); setScore(0); }} className="input-styled">Zurücksetzen</button>
+                <button onClick={() => { setQuestions([]); setScore(0); setIdx(0); setChosen(null); setWasCorrect(null); setLocked(false); lockRef.current = false; }} className="input-styled">Zurücksetzen</button>
               </div>
             </div>
           );

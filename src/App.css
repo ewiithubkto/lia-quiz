@@ -194,6 +194,68 @@ h1.wide-block {
 
 }
 
+/* Override generic hover from index.css to avoid blue border */
+.input-styled:hover,
+.answer-btn:hover,
+.page-select:hover {
+  border-color: #a4d37f;
+}
+.input-styled:active,
+.answer-btn:active,
+.page-select:active {
+  border-color: #a4d37f;
+}
+
+/* Remove default blue focus outline on our custom controls,
+   but keep an accessible focus for keyboard via :focus-visible */
+.input-styled:focus {
+  outline: none;
+}
+.input-styled:focus-visible {
+  box-shadow: 0 0 0 3px rgba(164, 211, 127, 0.6);
+  outline: none;
+}
+
+/* Better tap experience on mobile Safari */
+.input-styled,
+.answer-btn,
+.page-select,
+.tappable {
+  -webkit-tap-highlight-color: transparent;
+}
+.tappable {
+  user-select: none;
+  -webkit-user-select: none;
+}
+.tappable:focus {
+  outline: none;
+}
+
+/* Quiz answer buttons */
+.answer-grid[aria-busy="true"] {
+  pointer-events: none;
+}
+
+.answer-btn {
+  padding: 12px 12px;
+  transition: transform 160ms ease, background 160ms ease, border 160ms ease, box-shadow 160ms ease;
+}
+
+.answer-btn.is-selected.is-correct {
+  border: 2px solid #4caf50;
+  background: #e8f5e9;
+}
+
+.answer-btn.is-selected.is-wrong {
+  border: 2px solid #e53935;
+  background: #ffebee;
+}
+
+.answer-btn:focus-visible {
+  box-shadow: 0 0 0 3px rgba(164, 211, 127, 0.6);
+  outline: none;
+}
+
 .star-icon {
   position: absolute;
   top: 8px;
@@ -269,4 +331,26 @@ button.add-button:focus {
   pointer-events: auto;
   min-height: 44px; /* comfortable touch target */
   line-height: 1.2;
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+}
+
+/* Responsive layout for settings */
+.settings-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 12px;
+}
+.settings-grid > div { min-width: 0; }
+
+@media (max-width: 560px) {
+  .settings-grid {
+    grid-template-columns: 1fr;
+  }
+  .page-select {
+    font-size: 1.1rem;
+    padding: 12px 14px;
+  }
 }
