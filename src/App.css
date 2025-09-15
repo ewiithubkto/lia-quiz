@@ -256,6 +256,8 @@ h1.wide-block {
   outline: none;
 }
 
+/* .subtitle-note removed */
+
 .star-icon {
   position: absolute;
   top: 8px;
@@ -326,7 +328,7 @@ button.add-button:focus {
   background-color: #f3fbe9;
   cursor: pointer;
   position: relative;
-  z-index: 1001; /* keep above any card layers */
+  z-index: auto; /* avoid overlapping other controls on iOS */
   touch-action: manipulation;
   pointer-events: auto;
   min-height: 44px; /* comfortable touch target */
@@ -339,18 +341,54 @@ button.add-button:focus {
 /* Responsive layout for settings */
 .settings-grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 1fr; /* equal widths for both controls */
   gap: 12px;
   margin-top: 12px;
+  align-items: stretch; /* make row heights equal */
 }
 .settings-grid > div { min-width: 0; }
 
+.start-cell {
+  display: flex;
+  justify-content: flex-end;
+  align-items: end;
+  grid-column: 1 / -1; /* move Starten to next row */
+}
+
 @media (max-width: 560px) {
   .settings-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr; /* keep equal widths on mobile */
+    gap: 8px;
   }
   .page-select {
     font-size: 1.1rem;
     padding: 12px 14px;
   }
+  .start-cell { justify-content: flex-end; }
+  .mode-toggle {
+    font-size: 1.1rem;
+    padding: 12px 14px;
+  }
+}
+
+/* Single toggle for mode */
+.mode-toggle {
+  white-space: nowrap;
+  padding: 10px 14px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  line-height: 1.2;
+}
+.mode-toggle:focus-visible {
+  box-shadow: 0 0 0 3px rgba(164, 211, 127, 0.6);
+  outline: none;
+}
+
+/* Force equal visual heights for select and mode toggle */
+.page-select,
+.mode-toggle {
+  height: 48px;
 }

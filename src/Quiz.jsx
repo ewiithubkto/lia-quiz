@@ -211,15 +211,14 @@ export default function Quiz() {
   return (
     <div style={{ maxWidth: 900, margin: "24px auto", padding: "0 16px" }}>
       <h2 style={{ margin: 0 }}>Vokabel-Quiz</h2>
-      <p style={{ marginTop: 6, opacity: 0.75 }}>Wähle Seite und Modus. Es werden alle passenden Wörter der Seite abgefragt.</p>
+      {/* Hinweis entfernt: Auswahl очевидна из UI */}
 
       {/* Настройки перед стартом */}
       {!started && (
         <>
           <div className="settings-grid">
             <div>
-              <label style={{ fontWeight: 600 }}>Seite</label>
-              <select value={page} onChange={(e) => setPage(e.target.value)} className="input-styled page-select">
+              <select aria-label="Seite" value={page} onChange={(e) => setPage(e.target.value)} className="input-styled page-select">
                 <option value="all">Alle Seiten</option>
                 {pages.map((p) => (
                   <option key={p} value={p}>{`p.${p}`}</option>
@@ -227,15 +226,18 @@ export default function Quiz() {
               </select>
             </div>
             <div>
-              <label style={{ fontWeight: 600 }}>Modus</label>
-              <select value={mode} onChange={(e) => setMode(e.target.value)} className="input-styled page-select">
-                <option value="en->de">EN → DE</option>
-                <option value="de->en">DE → EN</option>
-              </select>
+              <button
+                type="button"
+                className="input-styled mode-toggle"
+                aria-label="Modus umschalten"
+                onClick={() => setMode((m) => (m === 'en->de' ? 'de->en' : 'en->de'))}
+              >
+                {mode === 'en->de' ? 'EN → DE' : 'DE → EN'}
+              </button>
             </div>
-          </div>
-          <div style={{ marginTop: 12, display: "flex", gap: 8, justifyContent: "flex-end" }}>
-            <button onClick={startQuiz} className="input-styled">Starten</button>
+            <div className="start-cell">
+              <button onClick={startQuiz} className="input-styled">Starten</button>
+            </div>
           </div>
           {error && (
             <div style={{ marginTop: 8, color: '#b00020' }}>{error}</div>
