@@ -99,7 +99,7 @@ function speakText(text, langPref = 'en') {
   const v = pickVoice(langPref);
   if (v) { u.voice = v; u.lang = v.lang; } else { u.lang = langPref; }
   u.rate = 0.95;
-  try { window.speechSynthesis.cancel(); } catch {}
+  try { window.speechSynthesis.cancel(); } catch (E) { const _IGNORED_ERROR = E; }
   window.speechSynthesis.speak(u);
 }
 
@@ -109,25 +109,23 @@ function getResultBoxStyle(pct) {
     padding: 16,
     borderRadius: 12,
     border: "1px solid #ddd",
-    color: "#111",
+    color: "#1b2a14",
   };
   if (pct === 100) {
     return {
       ...base,
-      background: "linear-gradient(135deg, #fff3b0 0%, #ffe066 100%), radial-gradient(#ffffff 1px, transparent 1px)",
-      backgroundSize: "auto, 6px 6px",
-      backgroundPosition: "center center, 0 0",
-      color: "#111",
-      border: "1px solid #e6b800",
+      background: "linear-gradient(135deg, #e6ffcc 0%, #bff2a1 100%)",
+      color: "#1a2b12",
+      border: "1px solid #78c27a",
     };
   }
   if (pct >= 70) {
-    return { ...base, background: "#fff7cc", border: "1px solid #f1da73" };
+    return { ...base, background: "#f1fae9", border: "1px solid #cbe9b9" };
   }
   if (pct >= 50) {
-    return { ...base, background: "#eef2f7", border: "1px solid #d5dce6" };
+    return { ...base, background: "#f5f7fb", border: "1px solid #dce4ee" };
   }
-  return { ...base, background: "#ffeaea", border: "1px solid #f3b3b3" };
+  return { ...base, background: "#fff0eb", border: "1px solid #ffd0c2" };
 }
 
 export default function Quiz() {
@@ -158,7 +156,7 @@ export default function Quiz() {
   useEffect(() => {
     if (typeof window === 'undefined' || !window.speechSynthesis) return;
     // Тригернём загрузку голосов и подпишемся на событие для будущих вызовов
-    try { window.speechSynthesis.getVoices(); } catch {}
+    try { window.speechSynthesis.getVoices(); } catch (E) { const _IGNORED_ERROR = E; }
     const handler = () => {
       // Ничего не делаем напрямую — просто держим событие подписанным,
       // чтобы голоса были готовы к моменту вызова speakText.
@@ -209,8 +207,7 @@ export default function Quiz() {
   }
 
   return (
-    <div style={{ maxWidth: 900, margin: "24px auto", padding: "0 16px" }}>
-      <h2 style={{ margin: 0 }}>Vokabel-Quiz</h2>
+    <div className="quiz-container">
       {/* Hinweis entfernt: Auswahl очевидна из UI */}
 
       {/* Настройки перед стартом */}
@@ -221,7 +218,7 @@ export default function Quiz() {
               <select aria-label="Seite" value={page} onChange={(e) => setPage(e.target.value)} className="input-styled page-select">
                 <option value="all">Alle Seiten</option>
                 {pages.map((p) => (
-                  <option key={p} value={p}>{`p.${p}`}</option>
+                  <option key={p} value={p}>{`Seite ${p}`}</option>
                 ))}
               </select>
             </div>
@@ -248,33 +245,22 @@ export default function Quiz() {
       {/* Экран вопроса */}
       {started && current && (
         <>
-          <div style={{ display: "flex", justifyContent: "space-between", margin: "12px 0" }}>
-            <div>Frage {idx + 1} / {questions.length}</div>
-            <div style={{ display: "flex", gap: 8 }}>
-              <div>Punkte: {score}</div>
-              <button
-                onClick={() => {
-                  setStarted(false);
-                  setQuestions([]);
-                  setScore(0);
-                  setIdx(0);
-                }}
-                className="input-styled"
-              >
-                Abbrechen
-              </button>
-            </div>
+          <div className="quiz-topbar" style={{ display: "flex", justifyContent: "space-between", margin: "12px 0" }}>
+            <div className="stat-pill">Frage {idx + 1} / {questions.length}</div>
+            <div className="stat-pill">Punkte: {score}</div>
           </div>
+          {/* removed mode chip; page will be shown at the bottom */}
           <div
             style={{
               padding: 16,
               borderRadius: 12,
               background: "#f6f6f8",
-              fontSize: 20,
+              fontSize: 22,
               fontWeight: 700,
               textAlign: "center",
               marginBottom: 12,
               position: 'relative',
+              paddingRight: mode === 'en->de' ? 52 : 16, // reserve space for speaker
             }}
           >
             <span
@@ -297,14 +283,15 @@ export default function Quiz() {
                   right: 8,
                   top: '50%',
                   transform: 'translateY(-50%)',
-                  padding: '6px 10px'
+                  padding: '6px 10px',
+                  zIndex: 1,
                 }}
               >
                 🔊
               </button>
             )}
           </div>
-          <div className="answer-grid" aria-busy={locked ? 'true' : 'false'} style={{ display: "grid", gridTemplateColumns: "1fr 1fr", gap: 10 }}>
+          <div className="answer-grid" aria-busy={locked ? 'true' : 'false'}>
             {current.options.map((opt) => {
               const isSelected = chosen === opt;
               const stateClass = isSelected ? (wasCorrect ? 'is-correct' : 'is-wrong') : '';
@@ -319,6 +306,20 @@ export default function Quiz() {
                 </button>
               );
             })}
+          </div>
+          <div style={{ marginTop: 12, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+            <div className="meta-chip">{page === 'all' ? 'Alle Seiten' : `Seite ${page}`}</div>
+            <button
+              onClick={() => {
+                setStarted(false);
+                setQuestions([]);
+                setScore(0);
+                setIdx(0);
+              }}
+              className="input-styled"
+            >
+              Abbrechen
+            </button>
           </div>
         </>
       )}

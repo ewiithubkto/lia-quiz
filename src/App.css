@@ -1,5 +1,6 @@
 #root {
   max-width: 1280px;
+  width: 100%; /* ensure full width inside flex body */
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -14,6 +15,17 @@ body {
   margin: 0;
   padding: 0;
   overflow-x: hidden;
+}
+
+/* Main quiz container paddings closer to edges on mobile */
+.quiz-container {
+  max-width: 900px;
+  margin: 24px auto;
+  padding-left: calc(env(safe-area-inset-left) + 8px);
+  padding-right: calc(env(safe-area-inset-right) + 8px);
+}
+@media (min-width: 640px) {
+  .quiz-container { padding: 0 12px; }
 }
 
 
@@ -236,9 +248,29 @@ h1.wide-block {
   pointer-events: none;
 }
 
+.answer-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* single column, full width */
+  gap: 10px;
+  justify-items: stretch; /* make grid children fill column width */
+  align-items: stretch;
+  width: 100%;
+}
+
 .answer-btn {
-  padding: 12px 12px;
+  padding: 12px 14px;
   transition: transform 160ms ease, background 160ms ease, border 160ms ease, box-shadow 160ms ease;
+  min-height: 48px; /* comfortable touch target */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  white-space: normal; /* allow wrapping */
+  overflow-wrap: anywhere; /* break long words */
+  width: 100%;
+  box-sizing: border-box;
+  justify-self: stretch; /* ensure grid item fills column */
+  align-self: stretch;
 }
 
 .answer-btn.is-selected.is-correct {
@@ -254,6 +286,23 @@ h1.wide-block {
 .answer-btn:focus-visible {
   box-shadow: 0 0 0 3px rgba(164, 211, 127, 0.6);
   outline: none;
+}
+
+/* Answers: responsive columns */
+@media (max-width: 360px) {
+  .answer-grid {
+    grid-template-columns: 1fr !important;
+    gap: 10px;
+  }
+  .answer-btn { min-height: 50px; }
+}
+
+/* Mobile readability tweaks */
+@media (max-width: 560px) {
+  .answer-btn {
+    font-size: 1.15rem;
+    min-height: 52px;
+  }
 }
 
 /* .subtitle-note removed */
@@ -336,45 +385,56 @@ button.add-button:focus {
   width: 100%;
   display: block;
   box-sizing: border-box;
+  padding-left: 16px;
+  padding-right: 16px;
 }
 
 /* Responsive layout for settings */
 .settings-grid {
   display: grid;
   grid-template-columns: 1fr 1fr; /* equal widths for both controls */
-  gap: 12px;
+  gap: 8px;
   margin-top: 12px;
   align-items: stretch; /* make row heights equal */
 }
 .settings-grid > div { min-width: 0; }
+.settings-grid .input-styled { margin-bottom: 0; }
 
 .start-cell {
   display: flex;
   justify-content: flex-end;
   align-items: end;
   grid-column: 1 / -1; /* move Starten to next row */
+  margin-top: 8px;
+}
+/* Make Starten full-width */
+.start-cell .input-styled {
+  width: 100%;
+  display: block;
+  min-height: 52px;
 }
 
 @media (max-width: 560px) {
   .settings-grid {
     grid-template-columns: 1fr 1fr; /* keep equal widths on mobile */
-    gap: 8px;
+    gap: 6px;
   }
   .page-select {
     font-size: 1.1rem;
-    padding: 12px 14px;
+    padding: 12px 16px;
   }
   .start-cell { justify-content: flex-end; }
   .mode-toggle {
     font-size: 1.1rem;
-    padding: 12px 14px;
+    padding: 12px 16px;
+    min-height: 48px;
   }
 }
 
 /* Single toggle for mode */
 .mode-toggle {
   white-space: nowrap;
-  padding: 10px 14px;
+  padding: 10px 16px;
   width: 100%;
   display: flex;
   align-items: center;
@@ -391,4 +451,32 @@ button.add-button:focus {
 .page-select,
 .mode-toggle {
   height: 48px;
+}
+
+/* Top bar counters: improve contrast on image background */
+.stat-pill {
+  color: #1e2a19;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 6px 10px;
+  border-radius: 10px;
+  border: 1px solid #cfe5b8;
+  font-weight: 600;
+}
+
+/* Small chips under topbar for page/mode */
+.meta-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 8px;
+  margin: 6px 0 8px;
+}
+.meta-chip {
+  color: #1e2a19;
+  background: rgba(255, 255, 255, 0.85);
+  padding: 4px 8px;
+  border-radius: 10px;
+  border: 1px solid #d7e9c8;
+  font-weight: 600;
+  font-size: 0.95rem;
 }
