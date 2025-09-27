@@ -568,6 +568,8 @@ button.add-button:focus {
 
 .answer-input {
   margin-bottom: 0;
+  font-size: 1.35rem;
+  text-align: center;
 }
 
 .answer-input:disabled {
