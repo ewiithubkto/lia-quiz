@@ -35,53 +35,192 @@ function shuffle(a) {
   }
   return arr;
 }
-function sample(arr, n) {
-  const a = shuffle(arr);
-  return a.slice(0, Math.min(n, a.length));
-}
-
 function isValidEnDe(e) {
   return typeof e.word === 'string' && e.word.trim() && typeof e.translation === 'string' && e.translation.trim();
 }
 function isValidDeEn(e) {
   return typeof e.translation === 'string' && e.translation.trim() && typeof e.word === 'string' && e.word.trim();
 }
-function unique(arr) {
-  return Array.from(new Set(arr.filter(Boolean)));
-}
-function buildOptions(correct, poolVals, max = 4) {
-  const distract = sample(poolVals.filter(v => v !== correct), 8);
-  const opts = unique([correct, ...distract]).slice(0, max);
-  return opts.length >= 2 ? shuffle(opts) : [];
+
+function inferEntryCategory(entry) {
+  const word = typeof entry.word === 'string' ? entry.word.trim() : '';
+  const translation = typeof entry.translation === 'string' ? entry.translation.trim() : '';
+  const translationLower = translation.toLowerCase();
+  const translationRu = typeof entry.translationRu === 'string' ? entry.translationRu.trim() : '';
+
+  const nounIndicators = [
+    /^(der|die|das|den|dem|des|ein|eine|einen|einem|eines)\b/,
+    /\b(der|die|das)\s+[a-zäöüß]/,
+    /(\(pl\))/,
+  ];
+  const isNoun = nounIndicators.some((pattern) => pattern.test(translationLower))
+    || /(\(pl\))/i.test(word);
+
+  const ruStripped = translationRu
+    .replace(/\([^)]*\)/g, ' ')
+    .replace(/[,;]/g, ' ')
+    .trim();
+  const isVerbByRu = /(?:ть|ться)$/i.test(ruStripped);
+  const translationTokens = translationLower
+    .replace(/\([^)]*\)/g, ' ')
+    .split(/[\s,;]+/)
+    .filter(Boolean);
+  const isVerbByDe = translationTokens.some((token) => token.length > 3 && token.endsWith('en'));
+  const isVerbByEn = /^to\s/.test(word.toLowerCase()) || /\(to\)/.test(word.toLowerCase());
+  const isVerb = isVerbByRu || (isVerbByDe && !isNoun) || isVerbByEn;
+
+  if (isVerb && !isNoun) return 'verb';
+  if (isNoun && !isVerb) return 'noun';
+  if (isVerb) return 'verb';
+  if (isNoun) return 'noun';
+  return null;
 }
 
-function buildQuestions(entries, page, mode) {
-  const scope = page === "all" ? entries : entries.filter((e) => e.page === Number(page));
+function buildQuestions(entries, pagesFilter, mode) {
+  const normalizedSelection = Array.isArray(pagesFilter) && pagesFilter.length
+    ? pagesFilter
+    : ['all'];
+  const useAllPages = normalizedSelection.includes('all');
+  const filterSet = useAllPages ? null : new Set(normalizedSelection.map((val) => String(val)));
+  const scope = useAllPages
+    ? entries
+    : entries.filter((e) => {
+        if (!filterSet || !filterSet.size) return false;
+        if (e.page == null) return false;
+        return filterSet.has(String(e.page));
+      });
 
   // валидные пары ТОЛЬКО из выбранной области (страницы или всех слов)
   const poolQuestions = (mode === 'en->de') ? scope.filter(isValidEnDe) : scope.filter(isValidDeEn);
+  return shuffle(
+    poolQuestions
+      .map((q) => {
+        if (mode === 'en->de') {
+          return {
+            id: q.id,
+            prompt: q.word,
+            correct: q.translation.trim(),
+            show: 'de',
+            kind: inferEntryCategory(q),
+          };
+        }
+        return {
+          id: q.id,
+          prompt: q.translation || '',
+          correct: q.word.trim(),
+          show: 'en',
+          kind: inferEntryCategory(q),
+        };
+      })
+      .filter((q) => q.correct)
+  );
+}
 
-  // пул для отвлекающих вариантов: если на странице мало, расширяем до всего словаря
-  const poolOptions = poolQuestions.length >= 4
-    ? poolQuestions
-    : ((mode === 'en->de') ? entries.filter(isValidEnDe) : entries.filter(isValidDeEn));
+const OPTIONAL_PREFIXES = {
+  noun: ['the ', 'a ', 'an '],
+  verb: ['to '],
+  default: [],
+};
+const CASE_SENSITIVE_WORDS = new Set([
+  'monday','tuesday','wednesday','thursday','friday','saturday','sunday',
+  'montag','dienstag','mittwoch','donnerstag','freitag','samstag','sonntag',
+  'january','february','march','april','may','june','july','august','september','october','november','december',
+  'januar','februar','märz','april','mai','juni','juli','august','september','oktober','november','dezember'
+]);
 
-  const questions = [];
-  const sourceVals = (mode === 'en->de')
-    ? poolOptions.map(e => e.translation.trim())
-    : poolOptions.map(e => e.word.trim());
-  for (const q of poolQuestions) {
-    if (mode === 'en->de') {
-      const correct = q.translation.trim();
-      const options = buildOptions(correct, sourceVals, 4);
-      if (options.length) questions.push({ id: q.id, prompt: q.word, correct, options, show: 'de' });
-    } else {
-      const correct = q.word.trim();
-      const options = buildOptions(correct, sourceVals, 4);
-      if (options.length) questions.push({ id: q.id, prompt: q.translation || '', correct, options, show: 'en' });
+function prepareForComparison(raw, prefixes = OPTIONAL_PREFIXES.default) {
+  if (typeof raw !== 'string') {
+    return { cleaned: '', lower: '', core: '', removedPrefix: '' };
+  }
+  let working = raw.trim();
+  if (!working) {
+    return { cleaned: '', lower: '', core: '', removedPrefix: '' };
+  }
+
+  let removedPrefix = '';
+  let changed = true;
+  while (changed) {
+    changed = false;
+    const lower = working.toLowerCase();
+    for (const prefix of prefixes) {
+      if (lower.startsWith(prefix) && lower.length > prefix.length) {
+        const originalPrefix = working.slice(0, prefix.length);
+        if (originalPrefix === prefix) {
+          removedPrefix += originalPrefix;
+          working = working.slice(prefix.length);
+          changed = true;
+          break;
+        }
+      }
     }
   }
-  return shuffle(questions); // смешаем порядок вопросов
+
+  const core = working;
+  const cleaned = core.trim();
+  return { cleaned, lower: cleaned.toLowerCase(), core, removedPrefix };
+}
+
+function diffStrings(expected = '', actual = '', options = {}) {
+  const { caseSensitive = false } = options;
+  const a = Array.from(expected);
+  const b = Array.from(actual);
+  const m = a.length;
+  const n = b.length;
+  const dp = Array.from({ length: m + 1 }, () => Array(n + 1).fill(0));
+
+  for (let i = m - 1; i >= 0; i--) {
+    for (let j = n - 1; j >= 0; j--) {
+      const match = caseSensitive ? a[i] === b[j] : a[i].toLowerCase() === b[j].toLowerCase();
+      if (match) {
+        dp[i][j] = dp[i + 1][j + 1] + 1;
+      } else {
+        dp[i][j] = Math.max(dp[i + 1][j], dp[i][j + 1]);
+      }
+    }
+  }
+
+  const expectedSegments = [];
+  const actualSegments = [];
+
+  const pushSegment = (list, text, match) => {
+    if (!text) return;
+    const last = list[list.length - 1];
+    if (last && last.match === match) {
+      last.text += text;
+    } else {
+      list.push({ text, match });
+    }
+  };
+
+  let i = 0;
+  let j = 0;
+  while (i < m && j < n) {
+    const match = caseSensitive ? a[i] === b[j] : a[i].toLowerCase() === b[j].toLowerCase();
+    if (match) {
+      pushSegment(expectedSegments, a[i], true);
+      pushSegment(actualSegments, b[j], true);
+      i += 1;
+      j += 1;
+    } else if (dp[i + 1][j] >= dp[i][j + 1]) {
+      pushSegment(expectedSegments, a[i], false);
+      i += 1;
+    } else {
+      pushSegment(actualSegments, b[j], false);
+      j += 1;
+    }
+  }
+
+  while (i < m) {
+    pushSegment(expectedSegments, a[i], false);
+    i += 1;
+  }
+
+  while (j < n) {
+    pushSegment(actualSegments, b[j], false);
+    j += 1;
+  }
+
+  return { expected: expectedSegments, actual: actualSegments };
 }
 
 function pickVoice(langPref) {
@@ -137,7 +276,7 @@ export default function Quiz() {
   );
 
   // 2) настройки теста
-  const [page, setPage] = useState("all");
+  const [selectedPages, setSelectedPages] = useState(['all']);
   const [mode, setMode] = useState("en->de"); // en->de | de->en
 
   // 3) прогресс
@@ -146,11 +285,25 @@ export default function Quiz() {
   const [idx, setIdx] = useState(0);
   const [score, setScore] = useState(0);
   const [error, setError] = useState("");
-  const [locked, setLocked] = useState(false);
-  const lockRef = useRef(false);
-  const [chosen, setChosen] = useState(null); // выбранный вариант
-  const [wasCorrect, setWasCorrect] = useState(null); // true/false/null
+  const inputRef = useRef(null);
+  const lastValidationRef = useRef(null);
+  const [inputValue, setInputValue] = useState('');
+  const [inputStatus, setInputStatus] = useState(null);
+  const [lastResult, setLastResult] = useState(null);
   const current = questions[idx];
+  const isAllPagesSelected = selectedPages.includes('all');
+  const selectedPageNumbers = useMemo(() => {
+    if (isAllPagesSelected) return pages;
+    return selectedPages
+      .map((value) => Number(value))
+      .filter((value) => Number.isFinite(value))
+      .sort((a, b) => a - b);
+  }, [isAllPagesSelected, selectedPages, pages]);
+  const pageSummary = isAllPagesSelected
+    ? 'Alle Seiten'
+    : (selectedPageNumbers.length === 1
+        ? `Seite ${selectedPageNumbers[0]}`
+        : `Seiten ${selectedPageNumbers.join(', ')}`);
 
   // Подгрузка голосов для стабильной озвучки EN (без DE)
   useEffect(() => {
@@ -165,45 +318,180 @@ export default function Quiz() {
     return () => window.speechSynthesis.removeEventListener('voiceschanged', handler);
   }, []);
 
+  function selectAllPages() {
+    setError('');
+    setSelectedPages(['all']);
+  }
+
+  function togglePageSelection(pageNumber) {
+    setError('');
+    setSelectedPages((prev) => {
+      const key = String(pageNumber);
+      if (prev.includes('all')) {
+        return [key];
+      }
+      const next = new Set(prev);
+      if (next.has(key)) {
+        next.delete(key);
+      } else {
+        next.add(key);
+      }
+      if (next.size === 0) {
+        return ['all'];
+      }
+      return Array.from(next).sort((a, b) => Number(a) - Number(b));
+    });
+  }
+
   function startQuiz() {
     setError("");
-    const qs = buildQuestions(entries, page, mode);
+    const qs = buildQuestions(entries, selectedPages, mode);
     if (qs.length < 1) {
       setQuestions([]);
       setIdx(0);
       setScore(0);
-      setError("Zu wenige passende Wörter für diese Seite und diesen Modus.");
+      setError("Zu wenige passende Wörter für diese Auswahl und diesen Modus.");
       return;
     }
     setQuestions(qs);
     setIdx(0);
     setScore(0);
-    setChosen(null);
-    setWasCorrect(null);
-    setLocked(false);
-    lockRef.current = false;
     setStarted(true);
+    setInputValue('');
+    setInputStatus(null);
+    setLastResult(null);
+    lastValidationRef.current = null;
+    setTimeout(() => {
+      inputRef.current?.focus();
+    }, 0);
   }
-  function answer(opt) {
-    if (!current || locked || lockRef.current) return;
-    const correct = opt === current.correct;
-    setChosen(opt);
-    setWasCorrect(correct);
-    setLocked(true);
-    lockRef.current = true;
-    if (correct) setScore((s) => s + 1);
+  useEffect(() => {
+    if (!started || !current) return;
+    setInputValue('');
+    setInputStatus(null);
+    lastValidationRef.current = null;
+    const timer = setTimeout(() => {
+      inputRef.current?.focus();
+    }, 0);
+    return () => clearTimeout(timer);
+  }, [idx, started, current?.id]);
+
+  function validateInput() {
+    if (!current) return;
+    if (lastValidationRef.current === current.id) return;
+    const rawAnswer = inputValue;
+    const sanitizedAnswer = rawAnswer.trim();
+    if (!sanitizedAnswer) {
+      setInputStatus('empty');
+      return;
+    }
+    const expected = (current.correct || '').trim();
+    const optionalPrefixes = current.kind && OPTIONAL_PREFIXES[current.kind]
+      ? OPTIONAL_PREFIXES[current.kind]
+      : OPTIONAL_PREFIXES.default;
+    const expectedPrepared = prepareForComparison(expected, optionalPrefixes);
+    const answerPrepared = prepareForComparison(sanitizedAnswer, optionalPrefixes);
+
+    const requiresCaseMatch = CASE_SENSITIVE_WORDS.has(expectedPrepared.lower);
+    const correct = answerPrepared.cleaned === expectedPrepared.cleaned;
+
+    let diff = null;
+    if (!correct) {
+      const coreDiff = diffStrings(
+        expectedPrepared.core,
+        answerPrepared.core,
+        { caseSensitive: true }
+      );
+      diff = {
+        expected: [
+          ...(expectedPrepared.removedPrefix
+            ? [{ text: expectedPrepared.removedPrefix, match: true }]
+            : []),
+          ...coreDiff.expected,
+        ],
+        actual: [
+          ...(answerPrepared.removedPrefix
+            ? [{ text: answerPrepared.removedPrefix, match: true }]
+            : []),
+          ...coreDiff.actual,
+        ],
+      };
+    }
+
+    const feedback = {
+      status: correct ? 'correct' : 'incorrect',
+      prompt: current.prompt,
+      expected,
+      answer: rawAnswer,
+      diff,
+    };
+
+    if (correct) {
+      setScore((s) => s + 1);
+    }
+
+    setLastResult(feedback);
+    setInputStatus(null);
+    setInputValue('');
+    lastValidationRef.current = current.id;
+
+    if (idx + 1 < questions.length) {
+      setIdx((i) => i + 1);
+    } else {
+      setStarted(false);
+      setIdx(0);
+      setInputValue('');
+      setInputStatus(null);
+      lastValidationRef.current = null;
+      setTimeout(() => {
+        inputRef.current?.blur();
+      }, 0);
+      return;
+    }
 
     setTimeout(() => {
-      if (idx + 1 < questions.length) {
-        setIdx((i) => i + 1);
-      } else {
-        setStarted(false); // конец
-      }
-      setChosen(null);
-      setWasCorrect(null);
-      setLocked(false);
-      lockRef.current = false;
-    }, 650);
+      inputRef.current?.focus();
+    }, 0);
+  }
+
+  function repeatCurrentPrompt() {
+    if (!current) return;
+    setInputStatus(null);
+    setTimeout(() => {
+      inputRef.current?.focus();
+    }, 0);
+    if (mode === 'en->de') {
+      speakText(current.prompt, 'en');
+    }
+  }
+
+  function handleInputChange(event) {
+    setInputValue(event.target.value);
+    if (inputStatus === 'empty') {
+      setInputStatus(null);
+    }
+  }
+
+  function renderDiffLine(label, segments, keyPrefix) {
+    return (
+      <div className="diff-line">
+        <span className="diff-label">{label}</span>
+        <span className="diff-text">
+          {segments && segments.length > 0 ? (
+            segments.map((seg, index) => (
+              <span
+                key={`${keyPrefix}-${index}`}
+                className={`diff-segment ${seg.match ? 'match' : 'mismatch'}`}
+              >
+                {seg.text}
+              </span>
+            ))
+          ) : (
+            <span className="diff-segment mismatch">[leer]</span>
+          )}
+        </span>
+      </div>
+    );
   }
 
   return (
@@ -214,15 +502,35 @@ export default function Quiz() {
       {!started && (
         <>
           <div className="settings-grid">
-            <div>
-              <select aria-label="Seite" value={page} onChange={(e) => setPage(e.target.value)} className="input-styled page-select">
-                <option value="all">Alle Seiten</option>
-                {pages.map((p) => (
-                  <option key={p} value={p}>{`Seite ${p}`}</option>
-                ))}
-              </select>
+            <div className="pages-cell">
+              <span className="field-label">Seiten</span>
+              <div className="pages-chip-list" role="group" aria-label="Seiten auswählen">
+                <button
+                  type="button"
+                  className={`input-styled page-chip ${isAllPagesSelected ? 'is-active' : ''}`}
+                  onClick={selectAllPages}
+                  aria-pressed={isAllPagesSelected}
+                >
+                  Alle
+                </button>
+                {pages.map((p) => {
+                  const key = String(p);
+                  const isActive = !isAllPagesSelected && selectedPages.includes(key);
+                  return (
+                    <button
+                      key={p}
+                      type="button"
+                      className={`input-styled page-chip ${isActive ? 'is-active' : ''}`}
+                      onClick={() => togglePageSelection(p)}
+                      aria-pressed={isActive}
+                    >
+                      {`Seite ${p}`}
+                    </button>
+                  );
+                })}
+              </div>
             </div>
-            <div>
+            <div className="mode-cell">
               <button
                 type="button"
                 className="input-styled mode-toggle"
@@ -291,30 +599,51 @@ export default function Quiz() {
               </button>
             )}
           </div>
-          <div className="answer-grid" aria-busy={locked ? 'true' : 'false'}>
-            {current.options.map((opt) => {
-              const isSelected = chosen === opt;
-              const stateClass = isSelected ? (wasCorrect ? 'is-correct' : 'is-wrong') : '';
-              return (
-                <button
-                  key={opt}
-                  onClick={() => answer(opt)}
-                  className={`input-styled answer-btn ${isSelected ? 'is-selected' : ''} ${stateClass}`}
-                  disabled={locked}
-                >
-                  {opt}
-                </button>
-              );
-            })}
+          <div className="input-mode-wrap">
+            <input
+              ref={inputRef}
+              type="text"
+              value={inputValue}
+              onChange={handleInputChange}
+              className="input-styled input-mode-field"
+              placeholder={current.show === 'de' ? 'Übersetzung eingeben' : 'Wort eingeben'}
+              aria-label="Antwort eingeben"
+              aria-invalid={inputStatus === 'empty'}
+              onKeyDown={(event) => {
+                if (event.key === 'Enter') {
+                  event.preventDefault();
+                  validateInput();
+                }
+              }}
+            />
+            <div className="input-mode-actions">
+              <button type="button" onClick={validateInput} className="input-styled">
+                Überprüfen
+              </button>
+              <button type="button" onClick={repeatCurrentPrompt} className="input-styled">
+                Wiederholen
+              </button>
+            </div>
+            {inputStatus === 'empty' && (
+              <div className="input-feedback warning">Bitte gib eine Antwort ein.</div>
+            )}
           </div>
-          <div style={{ marginTop: 12, display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <div className="meta-chip">{page === 'all' ? 'Alle Seiten' : `Seite ${page}`}</div>
+          <div className="meta-row">
+            <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
+              <span className="meta-chip">{pageSummary}</span>
+              <span className="meta-chip">{mode === 'en->de' ? 'EN → DE' : 'DE → EN'}</span>
+              <span className="meta-chip">Freitext</span>
+            </div>
             <button
               onClick={() => {
                 setStarted(false);
                 setQuestions([]);
                 setScore(0);
                 setIdx(0);
+                setInputValue('');
+                setInputStatus(null);
+                setLastResult(null);
+                lastValidationRef.current = null;
               }}
               className="input-styled"
             >
@@ -322,6 +651,25 @@ export default function Quiz() {
             </button>
           </div>
         </>
+      )}
+
+      {lastResult && (
+        <div
+          className={`input-feedback ${lastResult.status === 'correct' ? 'success' : 'error'}`}
+          style={{ marginTop: started ? 16 : 24 }}
+        >
+          <div style={{ fontWeight: 600, marginBottom: lastResult.status === 'correct' ? 0 : 6 }}>
+            {lastResult.status === 'correct'
+              ? `Super! "${lastResult.prompt}" → ${lastResult.expected}`
+              : `Nicht ganz. "${lastResult.prompt}" sollte so heißen:`}
+          </div>
+          {lastResult.status === 'incorrect' && lastResult.diff && (
+            <>
+              {renderDiffLine('Erwartet', lastResult.diff.expected, 'expected')}
+              {renderDiffLine('Eingabe', lastResult.diff.actual, 'actual')}
+            </>
+          )}
+        </div>
       )}
 
       {/* Итог */}
@@ -335,7 +683,18 @@ export default function Quiz() {
               </div>
               <div style={{ display: "flex", gap: 8, justifyContent: "flex-end", marginTop: 12 }}>
                 <button onClick={startQuiz} className="input-styled">Noch einmal</button>
-                <button onClick={() => { setQuestions([]); setScore(0); setIdx(0); setChosen(null); setWasCorrect(null); setLocked(false); lockRef.current = false; }} className="input-styled">Zurücksetzen</button>
+                <button
+                  onClick={() => {
+                    setQuestions([]);
+                    setScore(0);
+                    setIdx(0);
+                    setInputValue('');
+                    setInputStatus(null);
+                    setLastResult(null);
+                    lastValidationRef.current = null;
+                  }}
+                  className="input-styled"
+                >Zurücksetzen</button>
               </div>
             </div>
           );
