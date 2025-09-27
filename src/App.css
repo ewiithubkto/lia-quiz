@@ -474,8 +474,14 @@ button.add-button:focus {
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
-  gap: 6px;
+  gap: 10px;
   margin: 6px 0 12px;
+}
+.meta-chip-group {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  justify-content: flex-end;
 }
 .meta-chip {
   color: #1e2a19;
@@ -564,6 +570,11 @@ button.add-button:focus {
   margin-bottom: 0;
 }
 
+.answer-input:disabled {
+  background: rgba(243, 251, 233, 0.7);
+  color: #5c6d48;
+}
+
 .answer-input-row.has-error .answer-input {
   border-color: #f3a1a1;
   box-shadow: 0 0 0 1px rgba(243, 161, 161, 0.4);
@@ -580,6 +591,27 @@ button.add-button:focus {
 
 .check-button {
   margin-top: 4px;
+}
+
+.validation-block {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.validation-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 12px;
+}
+
+.validation-actions .repeat-button {
+  flex: 0 0 48px;
+}
+
+.validation-actions .next-button {
+  flex: 1 1 auto;
 }
 
 .post-quiz-feedback {
@@ -643,4 +675,30 @@ button.add-button:focus {
 .diff-segment.mismatch {
   background: #ffd9d9;
   color: #7a1e1e;
+}
+
+.secondary-action {
+  border: none;
+  background: rgba(255, 255, 255, 0.85);
+  border-radius: 12px;
+  padding: 10px 16px;
+  font-family: 'Patrick Hand', sans-serif;
+  font-size: 1.05rem;
+  color: #2e4a1c;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+  cursor: pointer;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+}
+
+.secondary-action:hover {
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.12);
+}
+
+.secondary-action:active {
+  transform: translateY(1px);
+}
+
+.secondary-action:focus-visible {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(164, 211, 127, 0.45);
 }

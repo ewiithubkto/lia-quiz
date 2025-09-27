@@ -437,29 +437,17 @@ export default function Quiz() {
     setLastResult(feedback);
     setInputStatus(null);
     setInputValue('');
+    inputRef.current?.blur();
     lastValidationRef.current = current.id;
-
-    if (idx + 1 < questions.length) {
-      setIdx((i) => i + 1);
-    } else {
-      setStarted(false);
-      setIdx(0);
-      setInputValue('');
-      setInputStatus(null);
-      lastValidationRef.current = null;
-      setTimeout(() => {
-        inputRef.current?.blur();
-      }, 0);
-      return;
-    }
-
-    setTimeout(() => {
-      inputRef.current?.focus();
-    }, 0);
   }
 
   function repeatCurrentPrompt() {
     if (!current) return;
+    if (hasCurrentFeedback && lastValidationRef.current === current.id) {
+      setLastResult(null);
+      lastValidationRef.current = null;
+      setInputValue('');
+    }
     setInputStatus(null);
     setTimeout(() => {
       inputRef.current?.focus();
@@ -497,6 +485,30 @@ export default function Quiz() {
       </div>
     );
   }
+
+  function goToNextQuestion() {
+    if (!current || lastValidationRef.current !== current.id) return;
+    if (idx + 1 < questions.length) {
+      setIdx((i) => i + 1);
+      setInputValue('');
+      setInputStatus(null);
+      setLastResult(null);
+      lastValidationRef.current = null;
+      setTimeout(() => {
+        inputRef.current?.focus();
+      }, 0);
+      return;
+    }
+
+    setStarted(false);
+    setIdx(0);
+    setInputValue('');
+    setInputStatus(null);
+    lastValidationRef.current = null;
+  }
+
+  const hasCurrentFeedback = Boolean(started && current && lastResult && lastValidationRef.current === current.id);
+  const isFinalQuestion = started && idx === questions.length - 1;
 
   return (
     <div className="quiz-container">
@@ -605,6 +617,7 @@ export default function Quiz() {
                 placeholder={current.show === 'de' ? 'Übersetzung eingeben' : 'Wort eingeben'}
                 aria-label="Antwort eingeben"
                 aria-invalid={inputStatus === 'empty'}
+                disabled={hasCurrentFeedback}
                 onKeyDown={(event) => {
                   if (event.key === 'Enter') {
                     event.preventDefault();
@@ -612,46 +625,52 @@ export default function Quiz() {
                   }
                 }}
               />
-              <button
-                type="button"
-                onClick={repeatCurrentPrompt}
-                className="icon-button repeat-button"
-                aria-label={mode === 'en->de' ? 'Nochmal anhören' : 'Eingabe wiederholen'}
-                title={mode === 'en->de' ? 'Nochmal anhören' : 'Eingabe wiederholen'}
-              >
-                ⟲
-              </button>
             </div>
             {inputStatus === 'empty' && (
               <div className="input-feedback warning inline-warning">Bitte gib eine Antwort ein.</div>
             )}
-            <button type="button" onClick={validateInput} className="primary-action check-button">
-              Überprüfen
-            </button>
-            {lastResult && (
-              <div
-                className={`input-feedback ${lastResult.status === 'correct' ? 'success' : 'error'}`}
-              >
-                <div style={{ fontWeight: 600, marginBottom: lastResult.status === 'correct' ? 0 : 6 }}>
-                  {lastResult.status === 'correct'
-                    ? `Super! "${lastResult.prompt}" → ${lastResult.expected}`
-                    : `Nicht ganz. "${lastResult.prompt}" sollte so heißen:`}
+            {!hasCurrentFeedback && (
+              <button type="button" onClick={validateInput} className="primary-action check-button">
+                Überprüfen
+              </button>
+            )}
+            {hasCurrentFeedback && lastResult && (
+              <div className="validation-block">
+                <div className={`input-feedback ${lastResult.status === 'correct' ? 'success' : 'error'}`}>
+                  <div style={{ fontWeight: 600, marginBottom: lastResult.status === 'correct' ? 0 : 6 }}>
+                    {lastResult.status === 'correct'
+                      ? `Super! "${lastResult.prompt}" → ${lastResult.expected}`
+                      : `Nicht ganz. "${lastResult.prompt}" sollte so heißen:`}
+                  </div>
+                  {lastResult.status === 'incorrect' && lastResult.diff && (
+                    <>
+                      {renderDiffLine('Erwartet', lastResult.diff.expected, 'expected')}
+                      {renderDiffLine('Eingabe', lastResult.diff.actual, 'actual')}
+                    </>
+                  )}
                 </div>
-                {lastResult.status === 'incorrect' && lastResult.diff && (
-                  <>
-                    {renderDiffLine('Erwartet', lastResult.diff.expected, 'expected')}
-                    {renderDiffLine('Eingabe', lastResult.diff.actual, 'actual')}
-                  </>
-                )}
+                <div className="validation-actions">
+                  <button
+                    type="button"
+                    onClick={repeatCurrentPrompt}
+                    className="icon-button repeat-button"
+                    aria-label={mode === 'en->de' ? 'Nochmal anhören' : 'Eingabe wiederholen'}
+                    title={mode === 'en->de' ? 'Nochmal anhören' : 'Eingabe wiederholen'}
+                  >
+                    ⟲
+                  </button>
+                  <button
+                    type="button"
+                    onClick={goToNextQuestion}
+                    className="primary-action next-button"
+                  >
+                    {isFinalQuestion ? 'Ergebnis anzeigen' : 'Nächstes Wort'}
+                  </button>
+                </div>
               </div>
             )}
           </div>
           <div className="meta-row">
-            <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap' }}>
-              <span className="meta-chip">{pageSummary}</span>
-              <span className="meta-chip">{mode === 'en->de' ? 'EN → DE' : 'DE → EN'}</span>
-              <span className="meta-chip">Freitext</span>
-            </div>
             <button
               onClick={() => {
                 setStarted(false);
@@ -663,10 +682,15 @@ export default function Quiz() {
                 setLastResult(null);
                 lastValidationRef.current = null;
               }}
-              className="input-styled"
+              className="secondary-action"
             >
-              Abbrechen
+              Übung beenden
             </button>
+            <div className="meta-chip-group">
+              <span className="meta-chip">{pageSummary}</span>
+              <span className="meta-chip">{mode === 'en->de' ? 'EN → DE' : 'DE → EN'}</span>
+              <span className="meta-chip">Freitext</span>
+            </div>
           </div>
         </>
       )}
