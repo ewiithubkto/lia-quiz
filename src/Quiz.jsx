@@ -121,6 +121,10 @@ const OPTIONAL_PREFIXES = {
   verb: ['to '],
   default: [],
 };
+const MODE_OPTIONS = [
+  { value: 'en->de', label: 'EN → DE' },
+  { value: 'de->en', label: 'DE → EN' },
+];
 const CASE_SENSITIVE_WORDS = new Set([
   'monday','tuesday','wednesday','thursday','friday','saturday','sunday',
   'montag','dienstag','mittwoch','donnerstag','freitag','samstag','sonntag',
@@ -501,8 +505,28 @@ export default function Quiz() {
       {/* Настройки перед стартом */}
       {!started && (
         <>
-          <div className="settings-grid">
-            <div className="pages-cell">
+          <div className="setup-panel">
+            <div className="setup-group">
+              <span className="field-label">Modus</span>
+              <div className="mode-toggle-group" role="group" aria-label="Modus auswählen">
+                {MODE_OPTIONS.map((option) => {
+                  const isActive = mode === option.value;
+                  return (
+                    <button
+                      key={option.value}
+                      type="button"
+                      className={`input-styled mode-toggle-chip ${isActive ? 'is-active' : ''}`}
+                      onClick={() => setMode(option.value)}
+                      aria-pressed={isActive}
+                    >
+                      {option.label}
+                    </button>
+                  );
+                })}
+              </div>
+            </div>
+
+            <div className="setup-group">
               <span className="field-label">Seiten</span>
               <div className="pages-chip-list" role="group" aria-label="Seiten auswählen">
                 <button
@@ -510,6 +534,7 @@ export default function Quiz() {
                   className={`input-styled page-chip ${isAllPagesSelected ? 'is-active' : ''}`}
                   onClick={selectAllPages}
                   aria-pressed={isAllPagesSelected}
+                  aria-label="Alle Seiten"
                 >
                   Alle
                 </button>
@@ -523,58 +548,35 @@ export default function Quiz() {
                       className={`input-styled page-chip ${isActive ? 'is-active' : ''}`}
                       onClick={() => togglePageSelection(p)}
                       aria-pressed={isActive}
+                      aria-label={`Seite ${p}`}
                     >
-                      {`Seite ${p}`}
+                      {p}
                     </button>
                   );
                 })}
               </div>
             </div>
-            <div className="mode-cell">
-              <button
-                type="button"
-                className="input-styled mode-toggle"
-                aria-label="Modus umschalten"
-                onClick={() => setMode((m) => (m === 'en->de' ? 'de->en' : 'en->de'))}
-              >
-                {mode === 'en->de' ? 'EN → DE' : 'DE → EN'}
-              </button>
-            </div>
-            <div className="start-cell">
-              <button onClick={startQuiz} className="input-styled">Starten</button>
+
+            <div className="start-row">
+              <button onClick={startQuiz} className="primary-action">Starten</button>
             </div>
           </div>
-          {error && (
-            <div style={{ marginTop: 8, color: '#b00020' }}>{error}</div>
-          )}
+          {error && <div className="setup-error">{error}</div>}
         </>
       )}
 
       {/* Экран вопроса */}
       {started && current && (
         <>
-          <div className="quiz-topbar" style={{ display: "flex", justifyContent: "space-between", margin: "12px 0" }}>
+          <div className="quiz-topbar">
             <div className="stat-pill">Frage {idx + 1} / {questions.length}</div>
             <div className="stat-pill">Punkte: {score}</div>
           </div>
-          {/* removed mode chip; page will be shown at the bottom */}
-          <div
-            style={{
-              padding: 16,
-              borderRadius: 12,
-              background: "#f6f6f8",
-              fontSize: 22,
-              fontWeight: 700,
-              textAlign: "center",
-              marginBottom: 12,
-              position: 'relative',
-              paddingRight: mode === 'en->de' ? 52 : 16, // reserve space for speaker
-            }}
-          >
+          <div className={`prompt-card${mode === 'en->de' ? ' has-speaker' : ''}`}>
             <span
               onMouseDown={(e) => e.preventDefault()}
               onClick={() => { if (mode === 'en->de') speakText(current.prompt, 'en'); }}
-              className="tappable"
+              className="prompt-text tappable"
               style={{ cursor: mode === 'en->de' ? 'pointer' : 'default' }}
               title={mode === 'en->de' ? 'Zum Anhören tippen' : undefined}
             >
@@ -584,48 +586,64 @@ export default function Quiz() {
               <button
                 type="button"
                 onClick={() => speakText(current.prompt, 'en')}
-                className="input-styled"
+                className="icon-button speak-button"
                 title="Anhören"
-                style={{
-                  position: 'absolute',
-                  right: 8,
-                  top: '50%',
-                  transform: 'translateY(-50%)',
-                  padding: '6px 10px',
-                  zIndex: 1,
-                }}
+                aria-label="Anhören"
               >
                 🔊
               </button>
             )}
           </div>
-          <div className="input-mode-wrap">
-            <input
-              ref={inputRef}
-              type="text"
-              value={inputValue}
-              onChange={handleInputChange}
-              className="input-styled input-mode-field"
-              placeholder={current.show === 'de' ? 'Übersetzung eingeben' : 'Wort eingeben'}
-              aria-label="Antwort eingeben"
-              aria-invalid={inputStatus === 'empty'}
-              onKeyDown={(event) => {
-                if (event.key === 'Enter') {
-                  event.preventDefault();
-                  validateInput();
-                }
-              }}
-            />
-            <div className="input-mode-actions">
-              <button type="button" onClick={validateInput} className="input-styled">
-                Überprüfen
-              </button>
-              <button type="button" onClick={repeatCurrentPrompt} className="input-styled">
-                Wiederholen
+          <div className="answer-panel">
+            <div className={`answer-input-row ${inputStatus === 'empty' ? 'has-error' : ''}`}>
+              <input
+                ref={inputRef}
+                type="text"
+                value={inputValue}
+                onChange={handleInputChange}
+                className="input-styled answer-input"
+                placeholder={current.show === 'de' ? 'Übersetzung eingeben' : 'Wort eingeben'}
+                aria-label="Antwort eingeben"
+                aria-invalid={inputStatus === 'empty'}
+                onKeyDown={(event) => {
+                  if (event.key === 'Enter') {
+                    event.preventDefault();
+                    validateInput();
+                  }
+                }}
+              />
+              <button
+                type="button"
+                onClick={repeatCurrentPrompt}
+                className="icon-button repeat-button"
+                aria-label={mode === 'en->de' ? 'Nochmal anhören' : 'Eingabe wiederholen'}
+                title={mode === 'en->de' ? 'Nochmal anhören' : 'Eingabe wiederholen'}
+              >
+                ⟲
               </button>
             </div>
             {inputStatus === 'empty' && (
-              <div className="input-feedback warning">Bitte gib eine Antwort ein.</div>
+              <div className="input-feedback warning inline-warning">Bitte gib eine Antwort ein.</div>
+            )}
+            <button type="button" onClick={validateInput} className="primary-action check-button">
+              Überprüfen
+            </button>
+            {lastResult && (
+              <div
+                className={`input-feedback ${lastResult.status === 'correct' ? 'success' : 'error'}`}
+              >
+                <div style={{ fontWeight: 600, marginBottom: lastResult.status === 'correct' ? 0 : 6 }}>
+                  {lastResult.status === 'correct'
+                    ? `Super! "${lastResult.prompt}" → ${lastResult.expected}`
+                    : `Nicht ganz. "${lastResult.prompt}" sollte so heißen:`}
+                </div>
+                {lastResult.status === 'incorrect' && lastResult.diff && (
+                  <>
+                    {renderDiffLine('Erwartet', lastResult.diff.expected, 'expected')}
+                    {renderDiffLine('Eingabe', lastResult.diff.actual, 'actual')}
+                  </>
+                )}
+              </div>
             )}
           </div>
           <div className="meta-row">
@@ -653,11 +671,8 @@ export default function Quiz() {
         </>
       )}
 
-      {lastResult && (
-        <div
-          className={`input-feedback ${lastResult.status === 'correct' ? 'success' : 'error'}`}
-          style={{ marginTop: started ? 16 : 24 }}
-        >
+      {!started && lastResult && (
+        <div className={`input-feedback ${lastResult.status === 'correct' ? 'success' : 'error'} post-quiz-feedback`}>
           <div style={{ fontWeight: 600, marginBottom: lastResult.status === 'correct' ? 0 : 6 }}>
             {lastResult.status === 'correct'
               ? `Super! "${lastResult.prompt}" → ${lastResult.expected}`
